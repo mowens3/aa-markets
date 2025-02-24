@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-09 01:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: markets/templates/markets/add_webhook.html:6
+#, python-format
+msgid "Add a new webhook to corporation \"%(corporation_name)s\""
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:13
+msgid "Add a new webhook:"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:14
+msgid "This method will create a brand new webhook on the auth."
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:21
+msgid "Webhook's name:"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:23
+msgid "This name will be assigned to ease finding the webhook back"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:26
+msgid "Enter the webhook's url:"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:37
+#: markets/templates/markets/add_webhook.html:62
+msgid "Create webhook"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:42
+msgid "Add an existing webhook:"
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:43
+msgid ""
+"This method allows to add a webhook already present in the auth. You only "
+"need to enter the webhook's id."
+msgstr ""
+
+#: markets/templates/markets/add_webhook.html:53
+msgid "Webhook's id:"
+msgstr ""
+
+#: markets/templates/markets/base.html:6
+msgid "Metenox"
+msgstr ""
+
+#: markets/templates/markets/base.html:17
+msgid "Add owner"
+msgstr ""
+
+#: markets/templates/markets/corporations.html:14
+msgid "Corporation name"
+msgstr ""
+
+#: markets/templates/markets/corporations.html:15
+msgid "Alliance name"
+msgstr ""
+
+#: markets/templates/markets/corporations.html:16
+msgid "Number markets"
+msgstr ""
+
+#: markets/templates/markets/corporations.html:17
+msgid "Raw revenue"
+msgstr ""
+
+#: markets/templates/markets/corporations.html:18
+msgid "Profit"
+msgstr ""
+
+#: markets/templates/markets/markets.html:14
+msgid "Metenox name"
+msgstr ""
+
+#: markets/templates/markets/markets.html:15
+#: markets/templates/markets/moons.html:14
+msgid "Moon"
+msgstr ""
+
+#: markets/templates/markets/markets.html:16
+msgid "Owner corporation"
+msgstr ""
+
+#: markets/templates/markets/markets.html:17
+#: markets/templates/markets/moons.html:15
+msgid "System"
+msgstr ""
+
+#: markets/templates/markets/markets.html:18
+#: markets/templates/markets/moons.html:16
+msgid "Constellation"
+msgstr ""
+
+#: markets/templates/markets/markets.html:18
+#: markets/templates/markets/moons.html:16
+msgid "Region"
+msgstr ""
+
+#: markets/templates/markets/markets.html:19
+msgid "Remaining fuel blocks"
+msgstr ""
+
+#: markets/templates/markets/markets.html:20
+msgid "Remaining magmatic"
+msgstr ""
+
+#: markets/templates/markets/markets.html:21
+#: markets/templates/markets/moons.html:17
+#: markets/templates/markets/partials/moon_details_moon.html:44
+msgid "Est. Value"
+msgstr ""
+
+#: markets/templates/markets/markets.html:21
+#: markets/templates/markets/moons.html:17
+#: markets/templates/markets/partials/markets_details_moon.html:51
+#: markets/templates/markets/partials/moon_details_moon.html:53
+msgid "Est. Profit"
+msgstr ""
+
+#: markets/templates/markets/modals/content_base.html:28
+msgid "Close"
+msgstr ""
+
+#: markets/templates/markets/partials/corp_footer.html:5
+#, python-format
+msgid ""
+"The Raw revenue represents the monthly (30 days) harvest of all markets "
+"moon goo sold for jita buy price. <br> The profit is the previous value "
+"minus %(monthly_fuel_price)s for every markets's fuel."
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:6
+msgid "Current notification parameters:"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:11
+msgid "Ping on remaining fuel days:"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:15
+msgid "Ping on remaining magmatic days:"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:19
+msgid "Save new values"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:23
+msgid "Current webhooks:"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:27
+#: markets/templates/markets/partials/markets_details_moon.html:6
+#: markets/templates/markets/partials/markets_details_stored_products.html:39
+#: markets/templates/markets/partials/moon_details_moon.html:6
+#: markets/templates/markets/partials/moon_details_products.html:18
+#: markets/templates/markets/prices.html:12
+msgid "Name"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:28
+msgid "Slug"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:29
+#: markets/templates/markets/partials/corporation_notifications.html:37
+msgid "Remove webhook"
+msgstr ""
+
+#: markets/templates/markets/partials/corporation_notifications.html:43
+msgid "Add new webhook"
+msgstr ""
+
+#: markets/templates/markets/partials/footer.html:5
+#, python-format
+msgid ""
+"The est. value represents the monthly (30 days) harvest of a markets moon "
+"goo sold for jita buy price. <br> The est. profit includes the monthly fuel "
+"price of approx %(monthly_fuel_price)s."
+msgstr ""
+
+#: markets/templates/markets/partials/menu.html:4
+msgid "Moons"
+msgstr ""
+
+#: markets/templates/markets/partials/menu.html:9
+msgid "Metenoxes"
+msgstr ""
+
+#: markets/templates/markets/partials/menu.html:12
+msgid "Corporations"
+msgstr ""
+
+#: markets/templates/markets/partials/menu.html:16
+msgid "Prices"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_moon.html:15
+#: markets/templates/markets/partials/moon_details_moon.html:15
+msgid "Location"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_moon.html:24
+#: markets/templates/markets/partials/moon_details_moon.html:24
+msgid "Corporation"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_moon.html:33
+msgid "Fuel block remaining"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_moon.html:42
+msgid "Magmatic gas remaining"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:6
+msgid "Moon products stored in the Metenox"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:11
+msgid "No Moon Materials stored in this Metenox detected."
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:19
+msgid "Total stored value"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:28
+msgid "Total stored volume"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:40
+#: markets/templates/markets/partials/moon_details_products.html:19
+msgid "Unit price"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:41
+msgid "Amount"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:42
+msgid "Volume"
+msgstr ""
+
+#: markets/templates/markets/partials/markets_details_stored_products.html:43
+msgid "Total value"
+msgstr ""
+
+#: markets/templates/markets/partials/moon_details_moon.html:35
+msgid "Time before full moon material bay"
+msgstr ""
+
+#: markets/templates/markets/partials/moon_details_products.html:5
+msgid "Monthly moon products harvest"
+msgstr ""
+
+#: markets/templates/markets/partials/moon_details_products.html:9
+msgid "There is no survey for this moon in the database."
+msgstr ""
+
+#: markets/templates/markets/partials/moon_details_products.html:20
+msgid "Hourly amount"
+msgstr ""
+
+#: markets/templates/markets/partials/moon_details_products.html:21
+msgid "Monthly Price"
+msgstr ""
+
+#: markets/templates/markets/prices.html:11
+msgid "Icon"
+msgstr ""
+
+#: markets/templates/markets/prices.html:13
+msgid "Price"
+msgstr ""
+
+#: markets/views/corporations.py:200 markets/views/corporations.py:233
+#: markets/views/corporations.py:320 markets/views/markets.py:290
+msgid "An error occurred"
+msgstr ""
+
+#: markets/views/corporations.py:215
+#, python-format
+msgid "Successfully changed %(corporation_name)s ping settings"
+msgstr ""
+
+#: markets/views/corporations.py:246
+#, python-format
+msgid ""
+"Successfully created webhook %(webhook_name)s for corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: markets/views/corporations.py:262
+#, python-format
+msgid ""
+"Successfully added webhook %(webhook_name)s to corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: markets/views/corporations.py:271
+msgid "Webhook id was not found"
+msgstr ""
+
+#: markets/views/corporations.py:283
+#, python-format
+msgid ""
+"Unexpected argument received when creating a webhook for corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: markets/views/corporations.py:295
+#, python-format
+msgid "Error when trying to add a webhook to corporation %(corporation_name)s"
+msgstr ""
+
+#: markets/views/corporations.py:327
+#, python-format
+msgid ""
+"Webhook %(webhook_name)s was successfully removed from %(corporation_name)s"
+msgstr ""
+
+#: markets/views/general.py:41
+msgid "An error occured"
+msgstr ""

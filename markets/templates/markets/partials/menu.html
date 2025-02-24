@@ -1,0 +1,17 @@
+{% load i18n %}
+{% if perms.markets.view_moons %}
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'markets:index' %}">{% translate "Moons" %}</a>
+</li>
+{% endif %}
+{% if perms.markets.view_markets %}
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'markets:markets' %}">{% translate "Metenoxes" %}</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'markets:corporations' %}">{% translate "Corporations" %}</a>
+</li>
+{% endif %}
+<li>
+    <a class="nav-link" aria-current="page" href="{% url 'markets:prices' %}">{% translate "Prices" %}</a>
+</li>

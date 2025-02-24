@@ -1,0 +1,2 @@
+{% url "markets:markets_details" markets.pk as new_page_url %}
+{% include "markets/modals/content_base.html" with modal_content_id="modalMetenoxDetailsContent" modal_body_url="markets/partials/markets_details.html" modal_title="Moon" new_page_url=new_page_url %}

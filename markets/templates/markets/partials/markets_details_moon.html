@@ -1,0 +1,56 @@
+{% load i18n %}
+{% load markets %}
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Name" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ markets.structure_name }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Location" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        {% include "markets/partials/location.html" with eve_solar_system=markets.moon.moonmining_moon.eve_moon.eve_planet.eve_solar_system %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Corporation" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ markets.corporation.corporation_name }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Fuel block remaining" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ markets.fuel_blocks_count }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Magmatic gas remaining" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ markets.magmatic_gas_count }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Est. Profit" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ markets.moon.profit | formatisk }}&nbsp;</p>
+    </div>
+</div>
