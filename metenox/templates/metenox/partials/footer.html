@@ -1,0 +1,10 @@
+{% load metenox %}
+{% load i18n %}
+
+<p class="text-muted">
+{% blocktranslate with monthly_fuel_price=monthly_fuel_price|formatisk trimmed %}
+    The est. value represents the monthly (30 days) harvest of a metenox moon goo sold for jita buy price.
+    <br>
+    The est. profit includes the monthly fuel price of approx {{ monthly_fuel_price }}.
+{% endblocktranslate %}
+</p>

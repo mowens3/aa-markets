@@ -1,0 +1,10 @@
+{% load metenox %}
+{% load i18n %}
+
+<p class="text-muted">
+{% blocktranslate with  monthly_fuel_price=monthly_fuel_price|formatisk trimmed %}
+    The Raw revenue represents the monthly (30 days) harvest of all metenoxes moon goo sold for jita buy price.
+    <br>
+    The profit is the previous value minus {{ monthly_fuel_price }} for every metenox's fuel.
+{% endblocktranslate %}
+</p>

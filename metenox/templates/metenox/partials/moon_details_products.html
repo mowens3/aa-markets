@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load humanize %}
+{% load metenox %}
+
+<h4>{% translate "Monthly moon products harvest" %}</h4>
+{% if moon.hourly_pull|length_is:"0" %}
+
+    <p class="text-warning"><strong>
+        {% translate "There is no survey for this moon in the database." %}
+    </strong></p>
+
+{% else %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">{% translate "Name" %}</th>
+                <th scope="col">{% translate "Unit price" %}</th>
+                <th scope="col">{% translate "Hourly amount" %}</th>
+                <th scope="col">{% translate "Monthly Price" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        {% for product, amount in moon.hourly_pull.items %}
+            <tr>
+                <th scope="row"><img class="media-object" src="{{ product.icon_url }}"></th>
+                <th>{{ product.name }}</th>
+                <td>{% goo_price product %} ISK</td>
+                <td>{{ amount }}</td>
+                <td>{% goo_price product amount True %} ISK</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

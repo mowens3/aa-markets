@@ -1,0 +1,61 @@
+{% load i18n %}
+{% load humanize %}
+{% load metenox %}
+
+
+<h4>{% translate "Moon products stored in the Metenox" %}</h4>
+{% if metenox.get_stored_moon_materials|length_is:"0" %}
+
+    <p class="text-warning">
+        <strong>
+            {% translate "No Moon Materials stored in this Metenox detected." %}
+        </strong>
+    </p>
+
+{% else %}
+
+    <div class="row">
+        <div class="col-md-2">
+            <p><strong>{% translate "Total stored value" %}:</strong></p>
+        </div>
+        <div class="col-md-10">
+            <p>{{ metenox.get_stored_moon_materials_value|formatisk }} ISK</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <p><strong>{% translate "Total stored volume" %}:</strong></p>
+        </div>
+        <div class="col-md-10">
+            <p>{{ metenox.get_stored_moon_materials_volume }} m3</p>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">{% translate "Name" %}</th>
+                <th scope="col">{% translate "Unit price" %}</th>
+                <th scope="col">{% translate "Amount" %}</th>
+                <th scope="col">{% translate "Volume" %}</th>
+                <th scope="col">{% translate "Total value" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        {% for stored_moon_material in metenox.get_stored_moon_materials %}
+            <tr>
+                <th scope="row"><img class="media-object" src="{{ stored_moon_material.product.icon_url }}"></th>
+                <th>{{ stored_moon_material.product.name }}</th>
+                <td>{% goo_price stored_moon_material.product %} ISK</td>
+                <td>{{ stored_moon_material.amount }}</td>
+                <td>{% widthratio stored_moon_material.product.volume 1 stored_moon_material.amount %} m3</td>
+                <td>{% goo_price stored_moon_material.product stored_moon_material.amount %} ISK</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endif %}

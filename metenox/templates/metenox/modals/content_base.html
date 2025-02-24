@@ -1,0 +1,32 @@
+<!-- Base template for creating the HTML for a modal. -->
+
+{% load i18n %}
+
+<div class="modal-dialog modal-lg modal-dialog-center" role="document" id="{{ modal_content_id }}">
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLabel">{{ modal_title }}</h1>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+            {% include modal_body_url %}
+        </div>
+
+        <div class="modal-footer">
+            {% if new_page_url %}
+                <a  class="btn btn-default btn-sm pull-left"
+                    href="{{ new_page_url }}?new_page=yes"
+                    target="_blank"
+                    title="Open in new tab">
+                    <i class="far fa-window-restore"></i>
+                </a>
+            {% endif %}
+            <button type="button" role="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">
+                {% translate "Close" %}
+            </button>
+        </div>
+    </div>
+</div>

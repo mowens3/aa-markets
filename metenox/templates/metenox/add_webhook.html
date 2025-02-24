@@ -1,0 +1,88 @@
+{% extends 'metenox/base.html' %}
+{% load i18n %}
+
+{% block content %}
+    <h3>
+    {% blocktranslate with corporation_name=corporation.corporation_name trimmed %}
+        Add a new webhook to corporation "{{ corporation_name }}"
+    {% endblocktranslate %}
+    </h3>
+
+    <br>
+
+    <h4>{% translate 'Add a new webhook:' %}</h4>
+    {% translate 'This method will create a brand new webhook on the auth.' %}
+
+    <form method="post" action="{% url "metenox:add_corporation_webhook" corporation.pk %}">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="new">
+
+        <div class="mb-3">
+            <label for="webhook_name">{% translate "Webhook's name:" %}</label>
+            <input type="text" size="30" name="webhook_name" id="webhook_name" aria-describedby="webhookNameHelp" required>
+            <div id="webhookNameHelp" class="form-help">{% translate 'This name will be assigned to ease finding the webhook back' %}</div>
+        </div>
+        <div class="mb-3">
+            <label for="webhook_url">{% translate "Enter the webhook's url:" %}</label>
+            <input type="text"
+                   size="80"
+                   name="webhook_url"
+                   id="webhook_url"
+                   pattern="https:\/\/discord.com\/api\/webhooks\/\d+\/.+"
+                   title="https://discord.com/api/webhooks/<id>/<token>"
+                   required
+            >
+            <span class="validity"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">{% translate 'Create webhook' %}</button>
+    </form>
+
+    <div class="p-4"></div>
+
+    <h4>{% translate 'Add an existing webhook:' %}</h4>
+    {% blocktranslate trimmed %}
+        This method allows to add a webhook already present in the auth.
+        You only need to enter the webhook's id.
+    {% endblocktranslate %}
+
+    <form method="post" action="{% url "metenox:add_corporation_webhook" corporation.pk %}">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="existing">
+
+        <div class="mb-3">
+            <label for="webhook_id">{% translate "Webhook's id:" %}</label>
+            <input type="number"
+                   size="20"
+                   id="webhook_id"
+                   name="webhook_id"
+                   required
+            >
+        </div>
+
+        <button class="btn btn-primary" type="submit">{% translate 'Create webhook' %}</button>
+
+    </form>
+
+{% endblock %}
+
+{% block extra_css %}
+    {{ block.super }}
+    <style>
+
+        input + span {
+            padding-right: 30px;
+        }
+
+        input:invalid + span::after {
+            position: absolute;
+            content: "✖";
+            padding-left: 5px;
+        }
+
+        input:valid + span::after {
+            position: absolute;
+            content: "✓";
+            padding-left: 5px;
+        }
+    </style>
+{% endblock %}

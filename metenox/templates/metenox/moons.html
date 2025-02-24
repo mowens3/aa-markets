@@ -1,0 +1,112 @@
+{% extends "metenox/base.html" %}
+{% load i18n %}
+{% load static %}
+{% load metenox %}
+
+{% block content %}
+    <div id="loader_all">
+        loader
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-stripped table-moons w-100" id="table_all">
+            <thead>
+                <th class="w-auto">{% translate "Moon" %}</th>
+                <th class="w-auto">{% translate "System" %}</th>
+                <th class="w-auto">{% translate "Constellation" %}<br>{% translate "Region" %}</th>
+                <th class="w-auto">{% translate "Est. Value" %}<br>{% translate 'Est. Profit' %}</th>
+                <th class="w-auto"></th>
+            </thead>
+        </table>
+    </div>
+
+    {% include "metenox/partials/footer.html" %}
+
+    {% include "metenox/modals/base.html" with modal_id="modalMoonDetails" modal_content_id="modalMoonDetailsContent" %}
+
+{% endblock %}
+
+{% block extra_javascript %}
+    {% include 'bundles/datatables-js-bs5.html' %}
+    {% include "bundles/filterdropdown-js.html" %}
+
+    <script type="text/javascript">
+        "use strict";
+        $(function(){
+
+            let dropDownColumns = [
+                {
+                    idx: 8,
+                    title: "Region",
+                    maxWidth: "10em",
+                },
+                {
+                    idx: 7,
+                    title: "Constellation",
+                    maxWidth: "10em",
+                },
+                {
+                    idx: 5,
+                    title: "System",
+                    maxWidth: "10em",
+                },
+                {
+                    idx: 6,
+                    title: "Rarity",
+                    maxWidth: "10em",
+                },
+            ]
+
+            const def = {
+                ajax: {
+                    url: '',
+                    dataSrc: 'data',
+                    cache: true,
+                },
+                columns: [
+                    { data: 'moon_name' },
+                    { data: 'solar_system_link' },
+                    { data: 'location_html' },
+                    { data: 'value' },
+                    { data: 'details' },
+                    /* Hidden columns */
+                    { data: 'solar_system_name' },
+                    { data: 'rarity_class_str' },
+                    { data: 'constellation_name' },
+                    { data: 'region_name' },
+                ],
+                searching: true,
+                processing: true,
+                serverSide: true,
+                lengthMenu: DEFAULT_LENGTH_MENU,
+                pageLength: DEFAULT_PAGE_LENGTH,
+                order: [ [0, "asc"] ],
+                columnDefs: [
+                    { "visible": false, "targets": [ 5, 6, 7, 8 ] },
+                    { "orderable": false, "targets": [ 1, 2, 4 ] },
+                ],
+                filterDropDown: {
+                    columns: dropDownColumns,
+                    bootstrap: true,
+                    bootstrap_version: 5,
+                }
+            };
+
+            /* all moons table */
+            let def_all = jQuery.extend(true, {}, def)
+            def_all.ajax.url = '{% url "metenox:moons_data" %}'
+            def_all.filterDropDown.ajax = '{% url "metenox:moons_fdd_data" %}'
+            let table_all = $('#table_all').DataTable(def_all);
+            table_all.on( 'init', function() {
+                table_all.columns.adjust().draw();
+                $("#loader_all").hide();
+                $("#wrapper_all").show();
+            });
+
+            handle_modal_events("modalMoonDetails", "modalMoonDetailsContent");
+        })
+    </script>
+
+    {{ block.super }}
+
+{% endblock %}

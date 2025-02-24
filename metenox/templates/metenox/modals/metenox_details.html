@@ -1,0 +1,2 @@
+{% url "metenox:metenox_details" metenox.pk as new_page_url %}
+{% include "metenox/modals/content_base.html" with modal_content_id="modalMetenoxDetailsContent" modal_body_url="metenox/partials/metenox_details.html" modal_title="Moon" new_page_url=new_page_url %}

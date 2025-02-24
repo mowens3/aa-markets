@@ -1,0 +1,102 @@
+{% extends "metenox/base.html" %}
+{% load i18n %}
+{% load static %}
+{% load metenox %}
+
+{% block content %}
+    <div id="loader_all">
+        loader
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-stripped table-moons w-100" id="table_all">
+            <thead>
+            <th class="w-auto">{% translate "Corporation name" %}</th>
+            <th class="w-auto">{% translate "Alliance name" %}</th>
+            <th class="w-auto">{% translate "Number metenoxes" %}</th>
+            <th class="w-auto">{% translate "Raw revenue" %}</th>
+            <th class="w-auto">{% translate "Profit" %}</th>
+            <th class="w-auto"></th>
+            </thead>
+        </table>
+    </div>
+
+    {% include "metenox/partials/corp_footer.html" %}
+
+    <!-- Modals -->
+    {% include "metenox/modals/base.html" with modal_id="modalCorporationNotifications" modal_content_id="modalCorporationNotificationsContent" %}
+
+{% endblock %}
+
+{% block extra_javascript %}
+    {% include 'bundles/datatables-js-bs5.html' %}
+    {% include "bundles/filterdropdown-js.html" %}
+
+    <script type="text/javascript">
+        "use strict";
+        $(function() {
+
+            let dropDownColumns = [
+                {
+                    idx: 1,
+                    title: "Alliance",
+                    maxWidth: "10em"
+                },
+            ]
+
+            const def = {
+                ajax: {
+                    url: '',
+                    dataSrc: 'data',
+                    cache: true,
+                },
+                columns: [
+                    { data: 'corporation_name' },
+                    { data: 'alliance_name' },
+                    { data: 'count_metenoxes' },
+                    {
+                        data: 'raw_revenue',
+                        render: $.fn.dataTable.render.formatisk()
+                    },
+                    {
+                        data: 'profit',
+                        render: $.fn.dataTable.render.formatisk()
+                    },
+                    { data: 'details' },
+                ],
+                searching: true,
+                processing: true,
+                serverSide: true,
+                lengthMenu: DEFAULT_LENGTH_MENU,
+                pageLength: DEFAULT_PAGE_LENGTH,
+                order: [ [0, "asc"] ],
+                columnDefs: [
+                    { "orderable": false, targets: [ 0, 1, 2, 3, 4, 5 ] },
+                ],
+                filterDropDown: {
+                    columns: dropDownColumns,
+                    bootstrap: true,
+                    bootstrap_version: 5,
+                }
+            };
+
+            /* all corporations table */
+            let def_all = jQuery.extend(true, {}, def)
+            def_all.ajax.url = '{% url "metenox:corporations_data" %}'
+            def_all.filterDropDown.ajax = '{% url "metenox:corporations_fdd_data" %}'
+            let table_all = $('#table_all').DataTable(def_all);
+            table_all.on( 'init', function() {
+                table_all.columns.adjust().draw();
+                $("#loader_all").hide();
+                $("#wrapper_all").show();
+            });
+
+            handle_modal_events("modalCorporationNotifications", "modalCorporationNotificationsContent");
+
+        })
+
+    </script>
+
+    {{ block.super }}
+
+{% endblock %}

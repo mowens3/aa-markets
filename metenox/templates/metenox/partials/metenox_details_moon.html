@@ -1,0 +1,56 @@
+{% load i18n %}
+{% load metenox %}
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Name" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ metenox.structure_name }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Location" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        {% include "metenox/partials/location.html" with eve_solar_system=metenox.moon.moonmining_moon.eve_moon.eve_planet.eve_solar_system %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Corporation" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ metenox.corporation.corporation_name }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Fuel block remaining" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ metenox.fuel_blocks_count }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Magmatic gas remaining" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ metenox.magmatic_gas_count }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Est. Profit" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ metenox.moon.profit | formatisk }}&nbsp;</p>
+    </div>
+</div>

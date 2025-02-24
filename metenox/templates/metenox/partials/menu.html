@@ -1,0 +1,17 @@
+{% load i18n %}
+{% if perms.metenox.view_moons %}
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'metenox:index' %}">{% translate "Moons" %}</a>
+</li>
+{% endif %}
+{% if perms.metenox.view_metenoxes %}
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'metenox:metenoxes' %}">{% translate "Metenoxes" %}</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="{% url 'metenox:corporations' %}">{% translate "Corporations" %}</a>
+</li>
+{% endif %}
+<li>
+    <a class="nav-link" aria-current="page" href="{% url 'metenox:prices' %}">{% translate "Prices" %}</a>
+</li>

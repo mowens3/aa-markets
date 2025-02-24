@@ -1,0 +1,133 @@
+<!-- Global Javascript values -->
+
+<script type="text/javascript">
+    "use strict";
+    /* Consts */
+    const DEFAULT_LENGTH_MENU = [[10, 25, 50, 100 -1], [10, 25, 50, 100, "All"]];
+    const DEFAULT_PAGE_LENGTH = 50;
+    const B_DIVIDER = 9;
+    const FUEL_BLOCK_PER_HOUR = {{ metenox_fuel_blocks_per_hour }};
+    const MAGMATIC_PER_HOUR = {{ metenox_magmatic_gases_per_hour }};
+
+    // Format ISK values for output
+    // magnitude: show value with given magnitude, else magnitude will be calculated
+    function formatisk(data, magnitude=null) {
+        if ( data != null ) {
+            const power_map = {'t': 12, 'b': 9, 'm': 6, 'k': 3, '': 0}
+            if (!power_map.hasOwnProperty(magnitude)) {
+                if (data >= 10 ** 12) magnitude = 't';
+                else if (data >= 10 ** 9) magnitude = 'b';
+                else if (data >= 10 ** 6) magnitude = 'm';
+                else if (data >= 10 ** 3) magnitude = 'k';
+                else magnitude = '';
+            }
+            return (data / (10 ** power_map[magnitude])).toLocaleString(
+                'en-US', {minimumFractionDigits: 1, maximumFractionDigits: 1}
+            ) + magnitude;
+        }
+        else return "";
+    }
+
+    // Format an amount of fuel type and the hourly consumption into a readable string
+    function formatfuel(data, hourly_consumption) {
+        if ( data != null ) {
+            let r_hours = Math.floor(data / hourly_consumption);
+            let r_days = Math.floor(r_hours / 24);
+            let hours = r_hours % 24;
+            let months = Math.floor(r_days / 30);
+            let days = r_days % 30;
+            if (months == 0) {
+                return `${days}d. ${hours}h.`
+            } else return `${months}m. ${days}d. ${hours}h.`
+        } else return "";
+    }
+
+    /// Format an amount of fuel blocks in a readable format
+    function formatFuelBlocks(data) {
+        return formatfuel(data, FUEL_BLOCK_PER_HOUR);
+    }
+
+    // Turns an amount of magmatic gases into a readable format
+    function formatMagmatic(data) {
+        return formatfuel(data, MAGMATIC_PER_HOUR)
+    }
+
+    // sum numbers in column and write result in footer row
+    // Args:
+    // - api: current api object
+    // - columnIdx: Index number of columns to sum, starts with 0
+    // - format: format of output. either 'number' or 'isk'
+    function dataTableFooterSumColumn(api, columnIdx, format='number'){
+        // Remove the formatting to get integer data for summation
+        let intVal = function (i) {
+            return typeof i === 'string' ?
+                i.replace(/[\$,]/g, '') * 1 :
+                typeof i === 'number' ?
+                    i : 0;
+        };
+
+        let columnTotal = api
+            .column(columnIdx)
+            .data()
+            .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                },
+                0
+            );
+        let result = "";
+        if (format == 'isk'){
+            result = formatisk(columnTotal)
+        } else {
+            result = columnTotal.toLocaleString('en-US', {maximumFractionDigits: 0})
+        }
+        $(api.column(columnIdx).footer()).html(result);
+    }
+
+    // DataTables renderer for ISK values
+    $.fn.dataTable.render.formatisk = function(magnitude=null) {
+        return function ( data, type, row ) {
+            if ( type === 'display' ) {
+                return formatisk(data, magnitude);
+            }
+            // Search, order and type can use the original data
+            return data;
+        };
+    };
+
+    $.fn.dataTable.render.formatMagmatic = function() {
+        return function (data, type, row) {
+            if ( type === 'display' ) {
+                return formatMagmatic(data)
+            }
+            // Search, order and type can use the original data
+            return data;
+        };
+    }
+    $.fn.dataTable.render.formatFuelBlocks = function() {
+        return function (data, type, row) {
+            if ( type === 'display' ) {
+                return formatFuelBlocks(data)
+            }
+            // Search, order and type can use the original data
+            return data;
+        };
+    }
+
+    // wrap boiler plate code for handling modal events
+    function handle_modal_events(modalId, modalContentId,) {
+        $('#' + modalId ).on('show.bs.modal', function (event) {
+            $(this).find('.modal-body').load("{% url 'metenox:modal_loader_body' %}?is_night_mode={{NIGHT_MODE}}")
+            let button = $(event.relatedTarget);
+            let ajax_url = button.data('ajax_url');
+            $('#' + modalContentId).load(ajax_url, function( response, status, xhr ) {
+                if ( status == "error" ) {
+                    let msg = `
+                        <p class="text-danger">
+                            Sorry but there was an error: ${xhr.status} ${xhr.statusText}
+                        </p>`;
+                    $(this).find('.modal-body').html(msg);
+                }
+            });
+        });
+    }
+</script>

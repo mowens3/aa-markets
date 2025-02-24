@@ -1,0 +1,5 @@
+<!-- Base template for all modals. Creates a loader. -->
+
+<div class="modal fade" id="{{ modal_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    {% include "metenox/modals/content_base.html" with modal_content_id=modal_content_id modal_body_url="metenox/modals/loader_body.html" modal_title="Loading..." modal_size=modal_size %}
+</div>

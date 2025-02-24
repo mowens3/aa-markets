@@ -1,0 +1,49 @@
+{% load i18n %}
+{% load metenox %}
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Name" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+    <p>{{ moon.name }}&nbsp;</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Location" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        {% include "metenox/partials/location.html" with eve_solar_system=moon.moonmining_moon.eve_moon.eve_planet.eve_solar_system %}
+    </div>
+</div>
+
+{% if moon.value != 0 %}
+<div class="row">
+    <div class="col-md-">
+        <p><strong>{% translate "Time before full moon material bay" %}: </strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ moon.cycles_before_full | hours_to_days }}</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Est. Value" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+        <p>{{ moon.value | formatisk }}</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <p><strong>{% translate "Est. Profit" %}:</strong></p>
+    </div>
+    <div class="col-md-10">
+    <p>{{ moon.profit | formatisk }}</p>
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,43 @@
+{% load i18n %}
+
+<h2>{{ corporation.corporation_name }}</h2>
+
+
+<b>{% translate "Current notification parameters:" %}</b>
+<form action="{% url 'metenox:change_notifications' corporation.pk %}" method="post">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label for="ping_on_remaining_fuel_days" class="form-label">{% translate "Ping on remaining fuel days:" %}</label>
+        <input type="number" min="0" id="ping_on_remaining_fuel_days" name="ping_on_remaining_fuel_days" value="{{ corporation.ping_on_remaining_fuel_days  }}">
+    </div>
+    <div class="mb-3">
+        <label for="ping_on_remaining_magmatic_days" class="form-label">{% translate "Ping on remaining magmatic days:" %}</label>
+        <input type="number" min="0" id="ping_on_remaining_magmatic_days" name="ping_on_remaining_magmatic_days" value="{{ corporation.ping_on_remaining_magmatic_days }}">
+    </div>
+
+    <input type="submit" class="btn btn-success btn-sm" value="{% translate 'Save new values' %}">
+
+</form>
+
+<b>{% translate "Current webhooks:" %}</b>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">{% translate "Name" %}</th>
+            <th scope="col">{% translate "Slug" %}</th>
+            <th scope="col">{% translate "Remove webhook" %}</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for webhook in corporation.webhooks.all %}
+        <tr>
+            <th>{{ webhook.name }}</th>
+            <th></th>
+            <th><a class="btn btn-danger btn-sm" href="{% url 'metenox:remove_corporation_webhook' corporation.pk webhook.pk %}">{% translate "Remove webhook" %}</a></th>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<a class="btn btn-primary btn-sm" href="{% url "metenox:add_corporation_webhook" corporation.pk %}">{% translate "Add new webhook" %}</a>

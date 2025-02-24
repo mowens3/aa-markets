@@ -1,0 +1,27 @@
+{% extends "metenox/base.html" %}
+{% load i18n %}
+{% load metenox %}
+{% load evelinks %}
+
+{% block content %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{% translate "Icon" %}</th>
+                <th>{% translate "Name" %}</th>
+                <th>{% translate "Price" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for goo_price in goo_prices %}
+            <tr>
+                <th><img src="{{ goo_price.eve_type.id|type_icon_url:64 }}" alt="{{ goo_price.moon_goo.name }} icon"></th>
+                <th>{{ goo_price.eve_type.name }}</th>
+                <th>{{ goo_price.price | formatisk }} ISK</th>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

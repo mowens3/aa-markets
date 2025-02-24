@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-09 01:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: metenox/templates/metenox/add_webhook.html:6
+#, python-format
+msgid "Add a new webhook to corporation \"%(corporation_name)s\""
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:13
+msgid "Add a new webhook:"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:14
+msgid "This method will create a brand new webhook on the auth."
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:21
+msgid "Webhook's name:"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:23
+msgid "This name will be assigned to ease finding the webhook back"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:26
+msgid "Enter the webhook's url:"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:37
+#: metenox/templates/metenox/add_webhook.html:62
+msgid "Create webhook"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:42
+msgid "Add an existing webhook:"
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:43
+msgid ""
+"This method allows to add a webhook already present in the auth. You only "
+"need to enter the webhook's id."
+msgstr ""
+
+#: metenox/templates/metenox/add_webhook.html:53
+msgid "Webhook's id:"
+msgstr ""
+
+#: metenox/templates/metenox/base.html:6
+msgid "Metenox"
+msgstr ""
+
+#: metenox/templates/metenox/base.html:17
+msgid "Add owner"
+msgstr ""
+
+#: metenox/templates/metenox/corporations.html:14
+msgid "Corporation name"
+msgstr ""
+
+#: metenox/templates/metenox/corporations.html:15
+msgid "Alliance name"
+msgstr ""
+
+#: metenox/templates/metenox/corporations.html:16
+msgid "Number metenoxes"
+msgstr ""
+
+#: metenox/templates/metenox/corporations.html:17
+msgid "Raw revenue"
+msgstr ""
+
+#: metenox/templates/metenox/corporations.html:18
+msgid "Profit"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:14
+msgid "Metenox name"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:15
+#: metenox/templates/metenox/moons.html:14
+msgid "Moon"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:16
+msgid "Owner corporation"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:17
+#: metenox/templates/metenox/moons.html:15
+msgid "System"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:18
+#: metenox/templates/metenox/moons.html:16
+msgid "Constellation"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:18
+#: metenox/templates/metenox/moons.html:16
+msgid "Region"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:19
+msgid "Remaining fuel blocks"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:20
+msgid "Remaining magmatic"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:21
+#: metenox/templates/metenox/moons.html:17
+#: metenox/templates/metenox/partials/moon_details_moon.html:44
+msgid "Est. Value"
+msgstr ""
+
+#: metenox/templates/metenox/metenoxes.html:21
+#: metenox/templates/metenox/moons.html:17
+#: metenox/templates/metenox/partials/metenox_details_moon.html:51
+#: metenox/templates/metenox/partials/moon_details_moon.html:53
+msgid "Est. Profit"
+msgstr ""
+
+#: metenox/templates/metenox/modals/content_base.html:28
+msgid "Close"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corp_footer.html:5
+#, python-format
+msgid ""
+"The Raw revenue represents the monthly (30 days) harvest of all metenoxes "
+"moon goo sold for jita buy price. <br> The profit is the previous value "
+"minus %(monthly_fuel_price)s for every metenox's fuel."
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:6
+msgid "Current notification parameters:"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:11
+msgid "Ping on remaining fuel days:"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:15
+msgid "Ping on remaining magmatic days:"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:19
+msgid "Save new values"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:23
+msgid "Current webhooks:"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:27
+#: metenox/templates/metenox/partials/metenox_details_moon.html:6
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:39
+#: metenox/templates/metenox/partials/moon_details_moon.html:6
+#: metenox/templates/metenox/partials/moon_details_products.html:18
+#: metenox/templates/metenox/prices.html:12
+msgid "Name"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:28
+msgid "Slug"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:29
+#: metenox/templates/metenox/partials/corporation_notifications.html:37
+msgid "Remove webhook"
+msgstr ""
+
+#: metenox/templates/metenox/partials/corporation_notifications.html:43
+msgid "Add new webhook"
+msgstr ""
+
+#: metenox/templates/metenox/partials/footer.html:5
+#, python-format
+msgid ""
+"The est. value represents the monthly (30 days) harvest of a metenox moon "
+"goo sold for jita buy price. <br> The est. profit includes the monthly fuel "
+"price of approx %(monthly_fuel_price)s."
+msgstr ""
+
+#: metenox/templates/metenox/partials/menu.html:4
+msgid "Moons"
+msgstr ""
+
+#: metenox/templates/metenox/partials/menu.html:9
+msgid "Metenoxes"
+msgstr ""
+
+#: metenox/templates/metenox/partials/menu.html:12
+msgid "Corporations"
+msgstr ""
+
+#: metenox/templates/metenox/partials/menu.html:16
+msgid "Prices"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_moon.html:15
+#: metenox/templates/metenox/partials/moon_details_moon.html:15
+msgid "Location"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_moon.html:24
+#: metenox/templates/metenox/partials/moon_details_moon.html:24
+msgid "Corporation"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_moon.html:33
+msgid "Fuel block remaining"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_moon.html:42
+msgid "Magmatic gas remaining"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:6
+msgid "Moon products stored in the Metenox"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:11
+msgid "No Moon Materials stored in this Metenox detected."
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:19
+msgid "Total stored value"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:28
+msgid "Total stored volume"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:40
+#: metenox/templates/metenox/partials/moon_details_products.html:19
+msgid "Unit price"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:41
+msgid "Amount"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:42
+msgid "Volume"
+msgstr ""
+
+#: metenox/templates/metenox/partials/metenox_details_stored_products.html:43
+msgid "Total value"
+msgstr ""
+
+#: metenox/templates/metenox/partials/moon_details_moon.html:35
+msgid "Time before full moon material bay"
+msgstr ""
+
+#: metenox/templates/metenox/partials/moon_details_products.html:5
+msgid "Monthly moon products harvest"
+msgstr ""
+
+#: metenox/templates/metenox/partials/moon_details_products.html:9
+msgid "There is no survey for this moon in the database."
+msgstr ""
+
+#: metenox/templates/metenox/partials/moon_details_products.html:20
+msgid "Hourly amount"
+msgstr ""
+
+#: metenox/templates/metenox/partials/moon_details_products.html:21
+msgid "Monthly Price"
+msgstr ""
+
+#: metenox/templates/metenox/prices.html:11
+msgid "Icon"
+msgstr ""
+
+#: metenox/templates/metenox/prices.html:13
+msgid "Price"
+msgstr ""
+
+#: metenox/views/corporations.py:200 metenox/views/corporations.py:233
+#: metenox/views/corporations.py:320 metenox/views/metenoxes.py:290
+msgid "An error occurred"
+msgstr ""
+
+#: metenox/views/corporations.py:215
+#, python-format
+msgid "Successfully changed %(corporation_name)s ping settings"
+msgstr ""
+
+#: metenox/views/corporations.py:246
+#, python-format
+msgid ""
+"Successfully created webhook %(webhook_name)s for corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: metenox/views/corporations.py:262
+#, python-format
+msgid ""
+"Successfully added webhook %(webhook_name)s to corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: metenox/views/corporations.py:271
+msgid "Webhook id was not found"
+msgstr ""
+
+#: metenox/views/corporations.py:283
+#, python-format
+msgid ""
+"Unexpected argument received when creating a webhook for corporation "
+"%(corporation_name)s"
+msgstr ""
+
+#: metenox/views/corporations.py:295
+#, python-format
+msgid "Error when trying to add a webhook to corporation %(corporation_name)s"
+msgstr ""
+
+#: metenox/views/corporations.py:327
+#, python-format
+msgid ""
+"Webhook %(webhook_name)s was successfully removed from %(corporation_name)s"
+msgstr ""
+
+#: metenox/views/general.py:41
+msgid "An error occured"
+msgstr ""

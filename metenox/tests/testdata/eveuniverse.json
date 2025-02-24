@@ -1,0 +1,3610 @@
+{
+    "EveCategory": [
+        {
+            "id": 2,
+            "name": "Celestial",
+            "published": true
+        },
+        {
+            "id": 4,
+            "name": "Material",
+            "published": true
+        },
+        {
+            "id": 25,
+            "name": "Asteroid",
+            "published": true
+        },
+        {
+            "id": 2143,
+            "name": "Colony Resources",
+            "published": true
+        }
+    ],
+    "EveConstellation": [
+        {
+            "eve_region_id": 10000033,
+            "id": 20000412,
+            "name": "Isoma",
+            "position_x": -1.8799109490249757e+17,
+            "position_y": 7.002504236095968e+16,
+            "position_z": 1.0819157091943803e+17
+        }
+    ],
+    "EveGroup": [
+        {
+            "eve_category_id": 2,
+            "id": 7,
+            "name": "Planet",
+            "published": false
+        },
+        {
+            "eve_category_id": 4,
+            "id": 18,
+            "name": "Mineral",
+            "published": true
+        },
+        {
+            "eve_category_id": 4,
+            "id": 427,
+            "name": "Moon Materials",
+            "published": true
+        },
+        {
+            "eve_category_id": 25,
+            "id": 1884,
+            "name": "Ubiquitous Moon Asteroids",
+            "published": true
+        },
+        {
+            "eve_category_id": 25,
+            "id": 1920,
+            "name": "Common Moon Asteroids",
+            "published": true
+        },
+        {
+            "eve_category_id": 25,
+            "id": 1921,
+            "name": "Uncommon Moon Asteroids",
+            "published": true
+        },
+        {
+            "eve_category_id": 25,
+            "id": 1923,
+            "name": "Exceptional Moon Asteroids",
+            "published": true
+        },
+        {
+            "eve_category_id": 2143,
+            "id": 4729,
+            "name": "Colony Reagents",
+            "published": true
+        }
+    ],
+    "EveMoon": [
+        {
+            "eve_planet_id": 40178439,
+            "id": 40178441,
+            "name": "Tama VI - Moon 1",
+            "position_x": -189330446977.0,
+            "position_y": 3635657815.0,
+            "position_z": 548119574524.0
+        }
+    ],
+    "EvePlanet": [
+        {
+            "enabled_sections": 0,
+            "eve_solar_system_id": 30002813,
+            "eve_type_id": 13,
+            "id": 40178439,
+            "name": "Tama VI",
+            "position_x": -189321751659.0,
+            "position_y": 3635490841.0,
+            "position_z": 547951313133.0
+        }
+    ],
+    "EveRegion": [
+        {
+            "description": "Acting as both an ideological fort as well as a physical impediment to invasion, the Citadel is among the most well fortified regions in the cluster. Despite their penchant for squabbling and competing with each other, nearly every Caldari corporation keeps a presence here, all working together to diligently defend their home. After having been ejected from one homeland, the Caldari are not about to suffer such a fate again. The Citadel stands as proud testament to that resolve.",
+            "id": 10000033,
+            "name": "The Citadel"
+        }
+    ],
+    "EveSolarSystem": [
+        {
+            "enabled_sections": 0,
+            "eve_constellation_id": 20000412,
+            "eve_star_id": null,
+            "id": 30002813,
+            "name": "Tama",
+            "position_x": -1.9368867177118506e+17,
+            "position_y": 7.74524465861002e+16,
+            "position_z": 1.1268218280222926e+17,
+            "security_status": 0.2825556993484497
+        }
+    ],
+    "EveType": [
+        {
+            "capacity": 0.0,
+            "description": "Gas planets are characterized by a deep, opaque upper atmosphere, usually composed primarily of light elements such as hydrogen or helium. Simple chemicals can add a range of hues and shades in the visual spectrum, and the interaction between upwellings and rapidly circulating pressure bands result in a huge variety of visible surface structures. A similar level of diversity can be found beneath the cloud-tops: the inner composition of a given gas planet might belong to any one of a dozen broad groups, with no two planets entirely alike in this regard.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 7,
+            "eve_market_group_id": null,
+            "icon_id": 10139,
+            "id": 13,
+            "mass": 1e+35,
+            "name": "Planet (Gas)",
+            "packaged_volume": 1.0,
+            "portion_size": 1,
+            "published": false,
+            "radius": 10000.0,
+            "volume": 1.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A soft crystal-like mineral with a very distinguishing orange glow as if on fire. Used as conduit and in the bio-chemical industry. Commonly found in many asteroid-ore types.\r\n\r\nMay be obtained by reprocessing the following ores and their variations:\r\n\r\nHigh security status star systems: <a href=showinfo:1228>scordite</a>, and <a href=showinfo:1224>pyroxeres</a>.\r\n\r\nLow security status star systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:1227>omber</a>, <a href=showinfo:21>hedbergite</a>, <a href=showinfo:1229>gneiss</a>, and <a href=showinfo:1225>crokite</a>.\r\n\r\nNull security status star systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:1223>bistot</a>, <a href=showinfo:22>arkonor</a>, <a href=showinfo:81900>kylixium</a>, and <a href=showinfo:82016>nocxite</a>.\r\n\r\nWormhole systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:1227>omber</a>, <a href=showinfo:1229>gneiss</a>, <a href=showinfo:1223>bistot</a>, and <a href=showinfo:22>arkonor</a>.\r\n\r\nThe rare ore <a href=showinfo:74521>mordunium</a> also contains significant quantities and is found primarily in nullsec and W-space systems containing A0 (Blue Small) stars, as well as surveyed locations on the borders of empire and nullsec space.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 18,
+            "eve_market_group_id": null,
+            "icon_id": 400,
+            "id": 35,
+            "mass": 0.0,
+            "name": "Pyerite",
+            "packaged_volume": 0.01,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.01
+        },
+        {
+            "capacity": 0.0,
+            "description": "Very flexible metallic mineral, dull to bright silvery green in color. Can be mixed with <a href=showinfo:34>Tritanium</a> to make extremely hard alloys or it can be used by itself for various purposes. Fairly common in most regions.\r\n\r\nMay be obtained by reprocessing the following ores and their variations:\r\n\r\nHigh security status star systems: <a href=showinfo:1224>pyroxeres</a>, and <a href=showinfo:18>plagioclase</a>.\r\n\r\nLow security status star systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:20>kernite</a>, <a href=showinfo:1226>jaspet</a>, <a href=showinfo:1229>gneiss</a>, <a href=showinfo:1232>dark ochre</a>, and <a href=showinfo:1225>crokite</a>.\r\n\r\nNull security status star systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:20>kernite</a>, <a href=showinfo:1223>bistot</a>, <a href=showinfo:22>arkonor</a>, and <a href=showinfo:81900>kylixium</a>.\r\n\r\nWormhole systems: <a href=showinfo:1224>pyroxeres</a>, <a href=showinfo:20>kernite</a>, <a href=showinfo:1229>gneiss</a>, <a href=showinfo:1223>bistot</a>, and <a href=showinfo:22>arkonor</a>.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 18,
+            "eve_market_group_id": null,
+            "icon_id": 401,
+            "id": 36,
+            "mass": 0.0,
+            "name": "Mexallon",
+            "packaged_volume": 0.01,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.01
+        },
+        {
+            "capacity": 0.0,
+            "description": "Raw fossil fuels such as petroleum and mineral oil. Hydrocarbons are crucial building blocks in the production of organic chemicals, plastics and waxes, and are thus one of the most useful materials harvestable from any source.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2669,
+            "id": 16633,
+            "mass": 0.0,
+            "name": "Hydrocarbons",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "Nitrogen, oxygen, neon, helium, xenon, methane, nitrous oxide, ozone - a host of trapped vapours that can be used to catalyze numerous chemical processes.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2668,
+            "id": 16634,
+            "mass": 0.0,
+            "name": "Atmospheric Gases",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "Deposits formed by the precipitation of mineral-rich water. Usable for many purposes, mostly as building-block components for more complex materials.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2667,
+            "id": 16635,
+            "mass": 0.0,
+            "name": "Evaporite Deposits",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "Various types of silicon-based and oxygen-based rock formations.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2670,
+            "id": 16636,
+            "mass": 0.0,
+            "name": "Silicates",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "One of the hardest metals in existence. Able to form extremely durable alloys with various other elements, and very useful in a number of deep-space scenarios.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2580,
+            "id": 16637,
+            "mass": 7720.0,
+            "name": "Tungsten",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "An extremely fatigue-resistant yet light-weight metallic element, useful as a refractory metal and employable in a wide variety of potential scenarios. One of the primary building blocks of a whole host of materials.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2582,
+            "id": 16638,
+            "mass": 1800.0,
+            "name": "Titanium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A transition element harnessed from rare minerals, Scandium commonly sees use as a component of high-intensity light fixtures for deep-space environments, as well as being a strong building block in many deep-space structures and spacecraft due to its extremely high melting point.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2577,
+            "id": 16639,
+            "mass": 1196.0,
+            "name": "Scandium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A silvery ferromagnetic element, used among other things in superalloys, magnetics, battery electrodes, and various metals and steels.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2570,
+            "id": 16640,
+            "mass": 3544.0,
+            "name": "Cobalt",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A steel-gray, lustrous metal with a wide variety of applications. Commonly used as a catalyst for chemical processes.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2569,
+            "id": 16641,
+            "mass": 4290.0,
+            "name": "Chromium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A soft, white metal with a wide-ranging arsenal of applications both nuclear and structural. Also a versatile catalyst in compound form.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2581,
+            "id": 16642,
+            "mass": 6000.0,
+            "name": "Vanadium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A soft, malleable metal often occuring with zinc ores. Has a wide variety of applications; used in electroplating, superconductors, and as an alloy in various types of structure and equipment.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2567,
+            "id": 16643,
+            "mass": 3476.0,
+            "name": "Cadmium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A corrosion-resistant precious metal with an extremely wide range of applications. Often used as a chemical catalyst.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2575,
+            "id": 16644,
+            "mass": 21460.0,
+            "name": "Platinum",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "Also known as quicksilver, mercury is a silvery liquid metal whose primary characteristic is the ease with which it forms amalgamatic alloys with other metals. It is therefore extremely useful as a base-block component.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2573,
+            "id": 16646,
+            "mass": 10826.0,
+            "name": "Mercury",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A golden Alkali metal used primarily in propulsion systems. Also performs a variety of catalytic functions in the nuclear and photoelectric arenas.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2568,
+            "id": 16647,
+            "mass": 1544.0,
+            "name": "Caesium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A silvery, corrosion-resistant metal used in various metal alloys and, to a lesser extent, in hybrid weapons systems.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2572,
+            "id": 16648,
+            "mass": 10640.0,
+            "name": "Hafnium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A silvery metal, primarily used as a corrosion inhibitor and a superconductor.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2578,
+            "id": 16649,
+            "mass": 8800.0,
+            "name": "Technetium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A relatively rare soft metal, easily dissolvable in mineral acids. Used primarily in the production of laser materials.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2571,
+            "id": 16650,
+            "mass": 8550.0,
+            "name": "Dysprosium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A rare, silvery metal. Due to its atmospheric reactiveness, Neodymium is used primarily for light-refractive purposes and as a colorant for other materials.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2574,
+            "id": 16651,
+            "mass": 7010.0,
+            "name": "Neodymium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "An extremely radioactive luminescent metal, sometimes used as a heating component and a building block for laser generators.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2576,
+            "id": 16652,
+            "mass": 7260.0,
+            "name": "Promethium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A soft, rare, silvery-gray metal. Used in the creation of lasers, in addition to possessing a range of radiation-related production applications.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 427,
+            "eve_market_group_id": null,
+            "icon_id": 2579,
+            "id": 16653,
+            "mass": 9320.0,
+            "name": "Thulium",
+            "packaged_volume": 0.05,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.05
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 45490,
+            "mass": 4000.0,
+            "name": "Zeolites",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 45491,
+            "mass": 4000.0,
+            "name": "Sylvite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 45492,
+            "mass": 4000.0,
+            "name": "Bitumens",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 45493,
+            "mass": 4000.0,
+            "name": "Coesite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 45494,
+            "mass": 4000.0,
+            "name": "Cobaltite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 45495,
+            "mass": 4000.0,
+            "name": "Euxenite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 45496,
+            "mass": 4000.0,
+            "name": "Titanite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 45497,
+            "mass": 4000.0,
+            "name": "Scheelite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 45498,
+            "mass": 4000.0,
+            "name": "Otavite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 45499,
+            "mass": 4000.0,
+            "name": "Sperrylite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 45500,
+            "mass": 4000.0,
+            "name": "Vanadinite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 45501,
+            "mass": 4000.0,
+            "name": "Chromite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 45510,
+            "mass": 4000.0,
+            "name": "Xenotime",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 45511,
+            "mass": 4000.0,
+            "name": "Monazite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 45512,
+            "mass": 4000.0,
+            "name": "Loparite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 45513,
+            "mass": 4000.0,
+            "name": "Ytterbite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Zeolites, the ore is called Brimful Zeolites and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 46280,
+            "mass": 4000.0,
+            "name": "Brimful Zeolites",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Zeolites ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Zeolites and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21797,
+            "id": 46281,
+            "mass": 4000.0,
+            "name": "Glistening Zeolites",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Sylvite, the ore is called Brimful Sylvite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 46282,
+            "mass": 4000.0,
+            "name": "Brimful Sylvite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Sylvite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Sylvite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21797,
+            "id": 46283,
+            "mass": 4000.0,
+            "name": "Glistening Sylvite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Bitumens, the ore is called Brimful Bitumens and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 46284,
+            "mass": 4000.0,
+            "name": "Brimful Bitumens",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Bitumens ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Bitumens and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21797,
+            "id": 46285,
+            "mass": 4000.0,
+            "name": "Glistening Bitumens",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Coesite, the ore is called Brimful Coesite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21792,
+            "id": 46286,
+            "mass": 4000.0,
+            "name": "Brimful Coesite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Coesite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Coesite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 21797,
+            "id": 46287,
+            "mass": 4000.0,
+            "name": "Glistening Coesite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Cobaltite, the ore is called Copious Cobaltite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 46288,
+            "mass": 4000.0,
+            "name": "Copious Cobaltite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Cobaltite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Cobaltite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21798,
+            "id": 46289,
+            "mass": 4000.0,
+            "name": "Twinkling Cobaltite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Euxenite, the ore is called Copious Euxenite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 46290,
+            "mass": 4000.0,
+            "name": "Copious Euxenite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Euxenite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Euxenite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21798,
+            "id": 46291,
+            "mass": 4000.0,
+            "name": "Twinkling Euxenite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Titanite, the ore is called Copious Titanite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 46292,
+            "mass": 4000.0,
+            "name": "Copious Titanite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Titanite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Titanite and reprocessing such ores will yield twice the normal volume of useful material. This material was often used to manufacture high-status weapons in ancient times.\r\n\r\nA common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21798,
+            "id": 46293,
+            "mass": 4000.0,
+            "name": "Twinkling Titanite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Scheelite, the ore is called Copious Scheelite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21793,
+            "id": 46294,
+            "mass": 4000.0,
+            "name": "Copious Scheelite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Scheelite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Scheelite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 21798,
+            "id": 46295,
+            "mass": 4000.0,
+            "name": "Twinkling Scheelite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Otavite, the ore is called Lavish Otavite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 46296,
+            "mass": 4000.0,
+            "name": "Lavish Otavite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Otavite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called shimmering otavite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21799,
+            "id": 46297,
+            "mass": 4000.0,
+            "name": "Shimmering Otavite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of sperrylite, the ore is called lavish sperrylite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 46298,
+            "mass": 4000.0,
+            "name": "Lavish Sperrylite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Sperrylite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Sperrylite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21799,
+            "id": 46299,
+            "mass": 4000.0,
+            "name": "Shimmering Sperrylite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Vanadinite, the ore is called Lavish Vanadinite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 46300,
+            "mass": 4000.0,
+            "name": "Lavish Vanadinite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Vanadinite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Vanadinite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21799,
+            "id": 46301,
+            "mass": 4000.0,
+            "name": "Shimmering Vanadinite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Chromite, the ore is called Lavish Chromite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21794,
+            "id": 46302,
+            "mass": 4000.0,
+            "name": "Lavish Chromite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Chromite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Chromite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 21799,
+            "id": 46303,
+            "mass": 4000.0,
+            "name": "Shimmering Chromite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Xenotime, the ore is called Bountiful Xenotime and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 46312,
+            "mass": 4000.0,
+            "name": "Bountiful Xenotime",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Xenotime ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Xenotime and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21801,
+            "id": 46313,
+            "mass": 4000.0,
+            "name": "Shining Xenotime",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Monazite, the ore is called Bountiful Monazite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 46314,
+            "mass": 4000.0,
+            "name": "Bountiful Monazite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Monazite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Monazite and reprocessing such ores will yield  twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21801,
+            "id": 46315,
+            "mass": 4000.0,
+            "name": "Shining Monazite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Loparite, the ore is called Bountiful Loparite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 46316,
+            "mass": 4000.0,
+            "name": "Bountiful Loparite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Loparite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Loparite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21801,
+            "id": 46317,
+            "mass": 4000.0,
+            "name": "Shining Loparite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Ytterbite, the ore is called Bountiful Ytterbite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21796,
+            "id": 46318,
+            "mass": 4000.0,
+            "name": "Bountiful Ytterbite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "Ytterbite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Ytterbite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 21801,
+            "id": 46319,
+            "mass": 4000.0,
+            "name": "Shining Ytterbite",
+            "packaged_volume": 10.0,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 10.0
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62454,
+            "mass": 4000.0,
+            "name": "Compressed Bitumens",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Bitumens, the ore is called Brimful Bitumens and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62455,
+            "mass": 4000.0,
+            "name": "Compressed Brimful Bitumens",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Bitumens ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Bitumens and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Bitumens are very useful as they yield good quantities of <a href=showinfo:16633>Hydrocarbons</a> used as basic elements of some advanced materials. Bitumen ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25179,
+            "id": 62456,
+            "mass": 4000.0,
+            "name": "Compressed Glistening Bitumens",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62457,
+            "mass": 4000.0,
+            "name": "Compressed Coesite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Coesite, the ore is called Brimful Coesite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62458,
+            "mass": 4000.0,
+            "name": "Compressed Brimful Coesite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Coesite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Coesite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Coesite is very useful as it yields good quantities of <a href=showinfo:16636>Silicates</a> used as basic elements of some advanced materials. Coesite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25179,
+            "id": 62459,
+            "mass": 4000.0,
+            "name": "Compressed Glistening Coesite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62460,
+            "mass": 4000.0,
+            "name": "Compressed Sylvite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Sylvite, the ore is called Brimful Sylvite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62461,
+            "mass": 4000.0,
+            "name": "Compressed Brimful Sylvite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:35>Pyerite</a> and <a href=showinfo:36>Mexallon</a> .\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62463,
+            "mass": 4000.0,
+            "name": "Compressed Zeolites",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Zeolites, the ore is called Brimful Zeolites and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25174,
+            "id": 62464,
+            "mass": 4000.0,
+            "name": "Compressed Brimful Zeolites",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Sylvite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Sylvite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Sylvite is very useful as it yields good quantities of <a href=showinfo:16635>Evaporite Deposits</a> used as basic elements of some advanced materials. Sylvite ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25179,
+            "id": 62466,
+            "mass": 4000.0,
+            "name": "Compressed Glistening Sylvite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Zeolites ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Glistening Zeolites and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA ubiquitous ore commercially mined from moons, Zeolites are useful as they yield good quantities of trapped <a href=showinfo:16634>Atmospheric Gases</a> used as basic elements of some advanced materials. Zeolites ores will also yield <a href=showinfo:36>Mexallon</a> and <a href=showinfo:35>Pyerite</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1884,
+            "eve_market_group_id": null,
+            "icon_id": 25179,
+            "id": 62467,
+            "mass": 4000.0,
+            "name": "Compressed Glistening Zeolites",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62468,
+            "mass": 4000.0,
+            "name": "Compressed Scheelite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Scheelite, the ore is called Copious Scheelite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62469,
+            "mass": 4000.0,
+            "name": "Compressed Copious Scheelite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Scheelite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Scheelite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Scheelite is very useful as it yields good quantities of <a href=showinfo:16637>Tungsten</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25180,
+            "id": 62470,
+            "mass": 4000.0,
+            "name": "Compressed Twinkling Scheelite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62471,
+            "mass": 4000.0,
+            "name": "Compressed Euxenite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Euxenite, the ore is called Copious Euxenite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62472,
+            "mass": 4000.0,
+            "name": "Compressed Copious Euxenite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Euxenite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Euxenite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Euxenite is very useful as it yields good quantities of <a href=showinfo:16639>Scandium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25180,
+            "id": 62473,
+            "mass": 4000.0,
+            "name": "Compressed Twinkling Euxenite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62474,
+            "mass": 4000.0,
+            "name": "Compressed Cobaltite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Cobaltite, the ore is called Copious Cobaltite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62475,
+            "mass": 4000.0,
+            "name": "Compressed Copious Cobaltite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Cobaltite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Cobaltite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nA common ore commercially mined from moons, Cobaltite is very useful as it yields good quantities of <a href=showinfo:16640>Cobalt</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25180,
+            "id": 62476,
+            "mass": 4000.0,
+            "name": "Compressed Twinkling Cobaltite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "A common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62477,
+            "mass": 4000.0,
+            "name": "Compressed Titanite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Titanite, the ore is called Copious Titanite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nA common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25175,
+            "id": 62478,
+            "mass": 4000.0,
+            "name": "Compressed Copious Titanite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Titanite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Twinkling Titanite and reprocessing such ores will yield twice the normal volume of useful material. This material was often used to manufacture high-status weapons in ancient times.\r\n\r\nA common ore commercially mined from moons, Titanite is very useful as it yields good quantities of <a href=showinfo:16638>Titanium</a>, a significant element of many advanced materials.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1920,
+            "eve_market_group_id": null,
+            "icon_id": 25180,
+            "id": 62479,
+            "mass": 4000.0,
+            "name": "Compressed Twinkling Titanite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62480,
+            "mass": 4000.0,
+            "name": "Compressed Chromite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Chromite, the ore is called Lavish Chromite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62481,
+            "mass": 4000.0,
+            "name": "Compressed Lavish Chromite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Chromite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Chromite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Chromite is quite valuable as it yields good quantities of <a href=showinfo:16641>Chromium</a>, an important element of many advanced materials. Chromite ores will also yield <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25181,
+            "id": 62482,
+            "mass": 4000.0,
+            "name": "Compressed Shimmering Chromite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62483,
+            "mass": 4000.0,
+            "name": "Compressed Otavite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Otavite, the ore is called Lavish Otavite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62484,
+            "mass": 4000.0,
+            "name": "Compressed Lavish Otavite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Otavite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called shimmering otavite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Otavite is quite valuable as it yields good quantities of <a href=showinfo:16643>Cadmium</a>, an important element of many advanced materials. Otavite ores will also yield <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25181,
+            "id": 62485,
+            "mass": 4000.0,
+            "name": "Compressed Shimmering Otavite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62486,
+            "mass": 4000.0,
+            "name": "Compressed Sperrylite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of sperrylite, the ore is called lavish sperrylite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62487,
+            "mass": 4000.0,
+            "name": "Compressed Lavish Sperrylite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Sperrylite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Sperrylite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Sperrylite is quite valuable as it yields good quantities of <a href=showinfo:16644>Platinum</a>, an important element of many advanced materials. Sperrylite ores will also yield <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25181,
+            "id": 62488,
+            "mass": 4000.0,
+            "name": "Compressed Shimmering Sperrylite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62489,
+            "mass": 4000.0,
+            "name": "Compressed Vanadinite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Vanadinite, the ore is called Lavish Vanadinite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25176,
+            "id": 62490,
+            "mass": 4000.0,
+            "name": "Compressed Lavish Vanadinite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Vanadinite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shimmering Vanadinite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn uncommon ore commercially mined from moons, Vanadinite is quite valuable as it yields good quantities of <a href=showinfo:16642>Vanadium</a>, an important element of many advanced materials. Vanadinite ores will also yield <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1921,
+            "eve_market_group_id": null,
+            "icon_id": 25181,
+            "id": 62491,
+            "mass": 4000.0,
+            "name": "Compressed Shimmering Vanadinite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62504,
+            "mass": 4000.0,
+            "name": "Compressed Loparite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Loparite, the ore is called Bountiful Loparite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62505,
+            "mass": 4000.0,
+            "name": "Compressed Bountiful Loparite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Loparite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Loparite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Loparite is highly valuable as it yields good quantities of <a href=showinfo:16652>Promethium</a>, a vital element of many advanced materials. Loparite ores will also yield <a href=showinfo:16644>Platinum</a>, <a href=showinfo:16639>Scandium</a> and <a href=showinfo:16633>Hydrocarbons</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25183,
+            "id": 62506,
+            "mass": 4000.0,
+            "name": "Compressed Shining Loparite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62507,
+            "mass": 4000.0,
+            "name": "Compressed Monazite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Monazite, the ore is called Bountiful Monazite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62508,
+            "mass": 4000.0,
+            "name": "Compressed Bountiful Monazite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Monazite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Monazite and reprocessing such ores will yield  twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Monazite is highly valuable as it yields good quantities of <a href=showinfo:16651>Neodymium</a>, a vital element of many advanced materials. Monazite ores will also yield <a href=showinfo:16641>Chromium</a>, <a href=showinfo:16637>Tungsten</a> and <a href=showinfo:16635>Evaporite Deposits</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25183,
+            "id": 62509,
+            "mass": 4000.0,
+            "name": "Compressed Shining Monazite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62510,
+            "mass": 4000.0,
+            "name": "Compressed Xenotime",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Xenotime, the ore is called Bountiful Xenotime and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62511,
+            "mass": 4000.0,
+            "name": "Compressed Bountiful Xenotime",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Xenotime ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Xenotime and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Xenotime is highly valuable as it yields good quantities of <a href=showinfo:16650>Dysprosium</a>, a vital element of many advanced materials. Xenotime ores will also yield <a href=showinfo:16642>Vanadium</a>, <a href=showinfo:16640>Cobalt</a> and <a href=showinfo:16634>Atmospheric Gases</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25183,
+            "id": 62512,
+            "mass": 4000.0,
+            "name": "Compressed Shining Xenotime",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "An exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62513,
+            "mass": 4000.0,
+            "name": "Compressed Ytterbite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "When chunks of ore mined out of moons yield above-average densities of Ytterbite, the ore is called Bountiful Ytterbite and reprocessing returns approximately 15% higher quantities of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25178,
+            "id": 62514,
+            "mass": 4000.0,
+            "name": "Compressed Bountiful Ytterbite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Ytterbite ores carved out of moons can occasionally yield very high densities of the valuable minerals. When this happens the ore is called Shining Ytterbite and reprocessing such ores will yield twice the normal volume of useful material.\r\n\r\nAn exceptional ore commercially mined from moons, Ytterbite is highly valuable as it yields good quantities of <a href=showinfo:16653>Thulium</a>, a vital element of many advanced materials. Ytterbite ores will also yield <a href=showinfo:16643>Cadmium</a>, <a href=showinfo:16638>Titanium</a> and <a href=showinfo:16636>Silicates</a>.\r\n\r\nThis material is compressed and a much more compact form of the original material.",
+            "enabled_sections": 8,
+            "eve_graphic_id": null,
+            "eve_group_id": 1923,
+            "eve_market_group_id": null,
+            "icon_id": 25183,
+            "id": 62515,
+            "mass": 4000.0,
+            "name": "Compressed Shining Ytterbite",
+            "packaged_volume": 0.1,
+            "portion_size": 100,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        },
+        {
+            "capacity": 0.0,
+            "description": "Collected from the stratosphere of planets undergoing constant volcanic eruptions, magmatic gas is a relatively stable mix of sublimated compounds. After a brief maturation period in its recipient skyhook, the mixture's potential energy increases greatly, enabling its use as fuel. Its consistent explosive power makes for excellent use in structures where the fuel\u2019s volume is not a detriment.\r\n\r\nAn <a href=showinfo:81080>orbital skyhook</a> anchored above a lava planet in null security sovereignty space produces magmatic gas.",
+            "enabled_sections": 0,
+            "eve_graphic_id": null,
+            "eve_group_id": 4729,
+            "eve_market_group_id": null,
+            "icon_id": 26005,
+            "id": 81143,
+            "mass": 3000.0,
+            "name": "Magmatic Gas",
+            "packaged_volume": 0.1,
+            "portion_size": 1,
+            "published": true,
+            "radius": 1.0,
+            "volume": 0.1
+        }
+    ],
+    "EveTypeMaterial": [
+        {
+            "eve_type_id": 62464,
+            "id": 385,
+            "material_eve_type_id": 35,
+            "quantity": 9200
+        },
+        {
+            "eve_type_id": 62464,
+            "id": 386,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 62464,
+            "id": 387,
+            "material_eve_type_id": 16634,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 62466,
+            "id": 388,
+            "material_eve_type_id": 35,
+            "quantity": 8000
+        },
+        {
+            "eve_type_id": 62466,
+            "id": 389,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 62466,
+            "id": 390,
+            "material_eve_type_id": 16635,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 62467,
+            "id": 391,
+            "material_eve_type_id": 35,
+            "quantity": 16000
+        },
+        {
+            "eve_type_id": 62467,
+            "id": 392,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 62467,
+            "id": 393,
+            "material_eve_type_id": 16634,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 45490,
+            "id": 394,
+            "material_eve_type_id": 35,
+            "quantity": 8000
+        },
+        {
+            "eve_type_id": 45490,
+            "id": 395,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 45490,
+            "id": 396,
+            "material_eve_type_id": 16634,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 45491,
+            "id": 397,
+            "material_eve_type_id": 35,
+            "quantity": 4000
+        },
+        {
+            "eve_type_id": 45491,
+            "id": 398,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 45491,
+            "id": 399,
+            "material_eve_type_id": 16635,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 45492,
+            "id": 400,
+            "material_eve_type_id": 35,
+            "quantity": 6000
+        },
+        {
+            "eve_type_id": 45492,
+            "id": 401,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 45492,
+            "id": 402,
+            "material_eve_type_id": 16633,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 45493,
+            "id": 403,
+            "material_eve_type_id": 35,
+            "quantity": 2000
+        },
+        {
+            "eve_type_id": 45493,
+            "id": 404,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 45493,
+            "id": 405,
+            "material_eve_type_id": 16636,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 46280,
+            "id": 406,
+            "material_eve_type_id": 35,
+            "quantity": 9200
+        },
+        {
+            "eve_type_id": 46280,
+            "id": 407,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 46280,
+            "id": 408,
+            "material_eve_type_id": 16634,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 46281,
+            "id": 409,
+            "material_eve_type_id": 35,
+            "quantity": 16000
+        },
+        {
+            "eve_type_id": 46281,
+            "id": 410,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 46281,
+            "id": 411,
+            "material_eve_type_id": 16634,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 46282,
+            "id": 412,
+            "material_eve_type_id": 35,
+            "quantity": 4600
+        },
+        {
+            "eve_type_id": 46282,
+            "id": 413,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 46282,
+            "id": 414,
+            "material_eve_type_id": 16635,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 46283,
+            "id": 415,
+            "material_eve_type_id": 35,
+            "quantity": 8000
+        },
+        {
+            "eve_type_id": 46283,
+            "id": 416,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 46283,
+            "id": 417,
+            "material_eve_type_id": 16635,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 46284,
+            "id": 418,
+            "material_eve_type_id": 35,
+            "quantity": 6900
+        },
+        {
+            "eve_type_id": 46284,
+            "id": 419,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 46284,
+            "id": 420,
+            "material_eve_type_id": 16633,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 46285,
+            "id": 421,
+            "material_eve_type_id": 35,
+            "quantity": 12000
+        },
+        {
+            "eve_type_id": 46285,
+            "id": 422,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 46285,
+            "id": 423,
+            "material_eve_type_id": 16633,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 46286,
+            "id": 424,
+            "material_eve_type_id": 35,
+            "quantity": 2300
+        },
+        {
+            "eve_type_id": 46286,
+            "id": 425,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 46286,
+            "id": 426,
+            "material_eve_type_id": 16636,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 46287,
+            "id": 427,
+            "material_eve_type_id": 35,
+            "quantity": 4000
+        },
+        {
+            "eve_type_id": 46287,
+            "id": 428,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 46287,
+            "id": 429,
+            "material_eve_type_id": 16636,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 62454,
+            "id": 430,
+            "material_eve_type_id": 35,
+            "quantity": 6000
+        },
+        {
+            "eve_type_id": 62454,
+            "id": 431,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 62454,
+            "id": 432,
+            "material_eve_type_id": 16633,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 62455,
+            "id": 433,
+            "material_eve_type_id": 35,
+            "quantity": 6900
+        },
+        {
+            "eve_type_id": 62455,
+            "id": 434,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 62455,
+            "id": 435,
+            "material_eve_type_id": 16633,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 62456,
+            "id": 436,
+            "material_eve_type_id": 35,
+            "quantity": 12000
+        },
+        {
+            "eve_type_id": 62456,
+            "id": 437,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 62456,
+            "id": 438,
+            "material_eve_type_id": 16633,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 62457,
+            "id": 439,
+            "material_eve_type_id": 35,
+            "quantity": 2000
+        },
+        {
+            "eve_type_id": 62457,
+            "id": 440,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 62457,
+            "id": 441,
+            "material_eve_type_id": 16636,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 62458,
+            "id": 442,
+            "material_eve_type_id": 35,
+            "quantity": 2300
+        },
+        {
+            "eve_type_id": 62458,
+            "id": 443,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 62458,
+            "id": 444,
+            "material_eve_type_id": 16636,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 62459,
+            "id": 445,
+            "material_eve_type_id": 35,
+            "quantity": 4000
+        },
+        {
+            "eve_type_id": 62459,
+            "id": 446,
+            "material_eve_type_id": 36,
+            "quantity": 800
+        },
+        {
+            "eve_type_id": 62459,
+            "id": 447,
+            "material_eve_type_id": 16636,
+            "quantity": 130
+        },
+        {
+            "eve_type_id": 62460,
+            "id": 448,
+            "material_eve_type_id": 35,
+            "quantity": 4000
+        },
+        {
+            "eve_type_id": 62460,
+            "id": 449,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 62460,
+            "id": 450,
+            "material_eve_type_id": 16635,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 62461,
+            "id": 451,
+            "material_eve_type_id": 35,
+            "quantity": 4600
+        },
+        {
+            "eve_type_id": 62461,
+            "id": 452,
+            "material_eve_type_id": 36,
+            "quantity": 460
+        },
+        {
+            "eve_type_id": 62461,
+            "id": 453,
+            "material_eve_type_id": 16635,
+            "quantity": 75
+        },
+        {
+            "eve_type_id": 62463,
+            "id": 454,
+            "material_eve_type_id": 35,
+            "quantity": 8000
+        },
+        {
+            "eve_type_id": 62463,
+            "id": 455,
+            "material_eve_type_id": 36,
+            "quantity": 400
+        },
+        {
+            "eve_type_id": 62463,
+            "id": 456,
+            "material_eve_type_id": 16634,
+            "quantity": 65
+        },
+        {
+            "eve_type_id": 62468,
+            "id": 457,
+            "material_eve_type_id": 16637,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62469,
+            "id": 458,
+            "material_eve_type_id": 16637,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62470,
+            "id": 459,
+            "material_eve_type_id": 16637,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62471,
+            "id": 460,
+            "material_eve_type_id": 16639,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62472,
+            "id": 461,
+            "material_eve_type_id": 16639,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62473,
+            "id": 462,
+            "material_eve_type_id": 16639,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62474,
+            "id": 463,
+            "material_eve_type_id": 16640,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62475,
+            "id": 464,
+            "material_eve_type_id": 16640,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62476,
+            "id": 465,
+            "material_eve_type_id": 16640,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62477,
+            "id": 466,
+            "material_eve_type_id": 16638,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62478,
+            "id": 467,
+            "material_eve_type_id": 16638,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62479,
+            "id": 468,
+            "material_eve_type_id": 16638,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 45494,
+            "id": 469,
+            "material_eve_type_id": 16640,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45495,
+            "id": 470,
+            "material_eve_type_id": 16639,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45496,
+            "id": 471,
+            "material_eve_type_id": 16638,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45497,
+            "id": 472,
+            "material_eve_type_id": 16637,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46288,
+            "id": 473,
+            "material_eve_type_id": 16640,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46289,
+            "id": 474,
+            "material_eve_type_id": 16640,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46290,
+            "id": 475,
+            "material_eve_type_id": 16639,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46291,
+            "id": 476,
+            "material_eve_type_id": 16639,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46292,
+            "id": 477,
+            "material_eve_type_id": 16638,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46293,
+            "id": 478,
+            "material_eve_type_id": 16638,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46294,
+            "id": 479,
+            "material_eve_type_id": 16637,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46295,
+            "id": 480,
+            "material_eve_type_id": 16637,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62480,
+            "id": 481,
+            "material_eve_type_id": 16633,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62480,
+            "id": 482,
+            "material_eve_type_id": 16641,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62481,
+            "id": 483,
+            "material_eve_type_id": 16633,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62481,
+            "id": 484,
+            "material_eve_type_id": 16641,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62482,
+            "id": 485,
+            "material_eve_type_id": 16633,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62482,
+            "id": 486,
+            "material_eve_type_id": 16641,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62483,
+            "id": 487,
+            "material_eve_type_id": 16634,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62483,
+            "id": 488,
+            "material_eve_type_id": 16643,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62484,
+            "id": 489,
+            "material_eve_type_id": 16634,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62484,
+            "id": 490,
+            "material_eve_type_id": 16643,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62485,
+            "id": 491,
+            "material_eve_type_id": 16634,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62485,
+            "id": 492,
+            "material_eve_type_id": 16643,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62486,
+            "id": 493,
+            "material_eve_type_id": 16635,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62486,
+            "id": 494,
+            "material_eve_type_id": 16644,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62487,
+            "id": 495,
+            "material_eve_type_id": 16635,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62487,
+            "id": 496,
+            "material_eve_type_id": 16644,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62488,
+            "id": 497,
+            "material_eve_type_id": 16635,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62488,
+            "id": 498,
+            "material_eve_type_id": 16644,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62489,
+            "id": 499,
+            "material_eve_type_id": 16636,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62489,
+            "id": 500,
+            "material_eve_type_id": 16642,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62490,
+            "id": 501,
+            "material_eve_type_id": 16636,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62490,
+            "id": 502,
+            "material_eve_type_id": 16642,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 62491,
+            "id": 503,
+            "material_eve_type_id": 16636,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62491,
+            "id": 504,
+            "material_eve_type_id": 16642,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 45498,
+            "id": 505,
+            "material_eve_type_id": 16634,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45498,
+            "id": 506,
+            "material_eve_type_id": 16643,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45499,
+            "id": 507,
+            "material_eve_type_id": 16635,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45499,
+            "id": 508,
+            "material_eve_type_id": 16644,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45500,
+            "id": 509,
+            "material_eve_type_id": 16636,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45500,
+            "id": 510,
+            "material_eve_type_id": 16642,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 45501,
+            "id": 511,
+            "material_eve_type_id": 16633,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45501,
+            "id": 512,
+            "material_eve_type_id": 16641,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46296,
+            "id": 513,
+            "material_eve_type_id": 16634,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46296,
+            "id": 514,
+            "material_eve_type_id": 16643,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46297,
+            "id": 515,
+            "material_eve_type_id": 16634,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46297,
+            "id": 516,
+            "material_eve_type_id": 16643,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46298,
+            "id": 517,
+            "material_eve_type_id": 16635,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46298,
+            "id": 518,
+            "material_eve_type_id": 16644,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46299,
+            "id": 519,
+            "material_eve_type_id": 16635,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46299,
+            "id": 520,
+            "material_eve_type_id": 16644,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46300,
+            "id": 521,
+            "material_eve_type_id": 16636,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46300,
+            "id": 522,
+            "material_eve_type_id": 16642,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46301,
+            "id": 523,
+            "material_eve_type_id": 16636,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46301,
+            "id": 524,
+            "material_eve_type_id": 16642,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 46302,
+            "id": 525,
+            "material_eve_type_id": 16633,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46302,
+            "id": 526,
+            "material_eve_type_id": 16641,
+            "quantity": 46
+        },
+        {
+            "eve_type_id": 46303,
+            "id": 527,
+            "material_eve_type_id": 16633,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46303,
+            "id": 528,
+            "material_eve_type_id": 16641,
+            "quantity": 80
+        },
+        {
+            "eve_type_id": 62504,
+            "id": 529,
+            "material_eve_type_id": 16633,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62504,
+            "id": 530,
+            "material_eve_type_id": 16639,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62504,
+            "id": 531,
+            "material_eve_type_id": 16644,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62504,
+            "id": 532,
+            "material_eve_type_id": 16652,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 62505,
+            "id": 533,
+            "material_eve_type_id": 16633,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62505,
+            "id": 534,
+            "material_eve_type_id": 16639,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62505,
+            "id": 535,
+            "material_eve_type_id": 16644,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62505,
+            "id": 536,
+            "material_eve_type_id": 16652,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 62506,
+            "id": 537,
+            "material_eve_type_id": 16633,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62506,
+            "id": 538,
+            "material_eve_type_id": 16639,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62506,
+            "id": 539,
+            "material_eve_type_id": 16644,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62506,
+            "id": 540,
+            "material_eve_type_id": 16652,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 62507,
+            "id": 541,
+            "material_eve_type_id": 16635,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62507,
+            "id": 542,
+            "material_eve_type_id": 16637,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62507,
+            "id": 543,
+            "material_eve_type_id": 16641,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62507,
+            "id": 544,
+            "material_eve_type_id": 16651,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 62508,
+            "id": 545,
+            "material_eve_type_id": 16635,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62508,
+            "id": 546,
+            "material_eve_type_id": 16637,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62508,
+            "id": 547,
+            "material_eve_type_id": 16641,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62508,
+            "id": 548,
+            "material_eve_type_id": 16651,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 62509,
+            "id": 549,
+            "material_eve_type_id": 16635,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62509,
+            "id": 550,
+            "material_eve_type_id": 16637,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62509,
+            "id": 551,
+            "material_eve_type_id": 16641,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62509,
+            "id": 552,
+            "material_eve_type_id": 16651,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 62510,
+            "id": 553,
+            "material_eve_type_id": 16634,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62510,
+            "id": 554,
+            "material_eve_type_id": 16640,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62510,
+            "id": 555,
+            "material_eve_type_id": 16642,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62510,
+            "id": 556,
+            "material_eve_type_id": 16650,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 62511,
+            "id": 557,
+            "material_eve_type_id": 16634,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62511,
+            "id": 558,
+            "material_eve_type_id": 16640,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62511,
+            "id": 559,
+            "material_eve_type_id": 16642,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62511,
+            "id": 560,
+            "material_eve_type_id": 16650,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 62512,
+            "id": 561,
+            "material_eve_type_id": 16634,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62512,
+            "id": 562,
+            "material_eve_type_id": 16640,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62512,
+            "id": 563,
+            "material_eve_type_id": 16642,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62512,
+            "id": 564,
+            "material_eve_type_id": 16650,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 62513,
+            "id": 565,
+            "material_eve_type_id": 16636,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62513,
+            "id": 566,
+            "material_eve_type_id": 16638,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62513,
+            "id": 567,
+            "material_eve_type_id": 16643,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 62513,
+            "id": 568,
+            "material_eve_type_id": 16653,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 62514,
+            "id": 569,
+            "material_eve_type_id": 16636,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62514,
+            "id": 570,
+            "material_eve_type_id": 16638,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 62514,
+            "id": 571,
+            "material_eve_type_id": 16643,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 62514,
+            "id": 572,
+            "material_eve_type_id": 16653,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 62515,
+            "id": 573,
+            "material_eve_type_id": 16636,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62515,
+            "id": 574,
+            "material_eve_type_id": 16638,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 62515,
+            "id": 575,
+            "material_eve_type_id": 16643,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 62515,
+            "id": 576,
+            "material_eve_type_id": 16653,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 45510,
+            "id": 577,
+            "material_eve_type_id": 16634,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45510,
+            "id": 578,
+            "material_eve_type_id": 16640,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45510,
+            "id": 579,
+            "material_eve_type_id": 16642,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45510,
+            "id": 580,
+            "material_eve_type_id": 16650,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 45511,
+            "id": 581,
+            "material_eve_type_id": 16635,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45511,
+            "id": 582,
+            "material_eve_type_id": 16637,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45511,
+            "id": 583,
+            "material_eve_type_id": 16641,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45511,
+            "id": 584,
+            "material_eve_type_id": 16651,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 45512,
+            "id": 585,
+            "material_eve_type_id": 16633,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45512,
+            "id": 586,
+            "material_eve_type_id": 16639,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45512,
+            "id": 587,
+            "material_eve_type_id": 16644,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45512,
+            "id": 588,
+            "material_eve_type_id": 16652,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 45513,
+            "id": 589,
+            "material_eve_type_id": 16636,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45513,
+            "id": 590,
+            "material_eve_type_id": 16638,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 45513,
+            "id": 591,
+            "material_eve_type_id": 16643,
+            "quantity": 10
+        },
+        {
+            "eve_type_id": 45513,
+            "id": 592,
+            "material_eve_type_id": 16653,
+            "quantity": 22
+        },
+        {
+            "eve_type_id": 46312,
+            "id": 593,
+            "material_eve_type_id": 16634,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46312,
+            "id": 594,
+            "material_eve_type_id": 16640,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46312,
+            "id": 595,
+            "material_eve_type_id": 16642,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46312,
+            "id": 596,
+            "material_eve_type_id": 16650,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 46313,
+            "id": 597,
+            "material_eve_type_id": 16634,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46313,
+            "id": 598,
+            "material_eve_type_id": 16640,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46313,
+            "id": 599,
+            "material_eve_type_id": 16642,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46313,
+            "id": 600,
+            "material_eve_type_id": 16650,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 46314,
+            "id": 601,
+            "material_eve_type_id": 16635,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46314,
+            "id": 602,
+            "material_eve_type_id": 16637,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46314,
+            "id": 603,
+            "material_eve_type_id": 16641,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46314,
+            "id": 604,
+            "material_eve_type_id": 16651,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 46315,
+            "id": 605,
+            "material_eve_type_id": 16635,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46315,
+            "id": 606,
+            "material_eve_type_id": 16637,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46315,
+            "id": 607,
+            "material_eve_type_id": 16641,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46315,
+            "id": 608,
+            "material_eve_type_id": 16651,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 46316,
+            "id": 609,
+            "material_eve_type_id": 16633,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46316,
+            "id": 610,
+            "material_eve_type_id": 16639,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46316,
+            "id": 611,
+            "material_eve_type_id": 16644,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46316,
+            "id": 612,
+            "material_eve_type_id": 16652,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 46317,
+            "id": 613,
+            "material_eve_type_id": 16633,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46317,
+            "id": 614,
+            "material_eve_type_id": 16639,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46317,
+            "id": 615,
+            "material_eve_type_id": 16644,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46317,
+            "id": 616,
+            "material_eve_type_id": 16652,
+            "quantity": 44
+        },
+        {
+            "eve_type_id": 46318,
+            "id": 617,
+            "material_eve_type_id": 16636,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46318,
+            "id": 618,
+            "material_eve_type_id": 16638,
+            "quantity": 23
+        },
+        {
+            "eve_type_id": 46318,
+            "id": 619,
+            "material_eve_type_id": 16643,
+            "quantity": 12
+        },
+        {
+            "eve_type_id": 46318,
+            "id": 620,
+            "material_eve_type_id": 16653,
+            "quantity": 25
+        },
+        {
+            "eve_type_id": 46319,
+            "id": 621,
+            "material_eve_type_id": 16636,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46319,
+            "id": 622,
+            "material_eve_type_id": 16638,
+            "quantity": 40
+        },
+        {
+            "eve_type_id": 46319,
+            "id": 623,
+            "material_eve_type_id": 16643,
+            "quantity": 20
+        },
+        {
+            "eve_type_id": 46319,
+            "id": 624,
+            "material_eve_type_id": 16653,
+            "quantity": 44
+        }
+    ]
+}
