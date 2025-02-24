@@ -44,7 +44,7 @@ Changelog = "https://github.com/mowens3/aa-markets/-/blob/main/CHANGELOG.md"
 Tracker = "https://github.com/mowens3/aa-markets/-/issues"
 
 [tool.flit.module]
-name = "metenox"
+name = "markets"
 
 [tool.isort]
 profile = "black"
