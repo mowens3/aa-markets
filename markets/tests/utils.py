@@ -1,6 +1,6 @@
 from allianceauth.eveonline.models import EveCorporationInfo
 
-from metenox.models import HoldingCorporation
+from markets.models import HoldingCorporation
 
 
 def create_test_holding(holding_id: int = 1) -> HoldingCorporation:

@@ -13,9 +13,9 @@ from app_utils.allianceauth import notify_admins
 
 from markets import tasks
 from markets.app_settings import (
-    METENOX_ADMIN_NOTIFICATIONS_ENABLED,
-    METENOX_FUEL_BLOCKS_PER_HOUR,
-    METENOX_MAGMATIC_GASES_PER_HOUR,
+    MARKETS_ADMIN_NOTIFICATIONS_ENABLED,
+    MARKETS_FUEL_BLOCKS_PER_HOUR,
+    MARKETS_MAGMATIC_GASES_PER_HOUR,
 )
 from markets.models import ESI_SCOPES, HoldingCorporation, Moon, Owner, Webhook
 
@@ -53,8 +53,8 @@ def add_common_context(context: dict = None) -> dict:
         context["page_title"] = "Markets"
 
     context["monthly_fuel_price"] = Moon.fuel_price()
-    context["markets_fuel_blocks_per_hour"] = METENOX_FUEL_BLOCKS_PER_HOUR
-    context["markets_magmatic_gases_per_hour"] = METENOX_MAGMATIC_GASES_PER_HOUR
+    context["markets_fuel_blocks_per_hour"] = MARKETS_FUEL_BLOCKS_PER_HOUR
+    context["markets_magmatic_gases_per_hour"] = MARKETS_MAGMATIC_GASES_PER_HOUR
 
     return context
 
@@ -99,7 +99,7 @@ def add_owner(request, token):
     # TODO figure out why I need to type all this to get the right corp id
     tasks.update_holding.delay(owner.corporation.corporation.corporation_id)
     messages.success(request, f"Update of refineries started for {owner}.")
-    if METENOX_ADMIN_NOTIFICATIONS_ENABLED:
+    if MARKETS_ADMIN_NOTIFICATIONS_ENABLED:
         notify_admins(
             message=f"{owner} was added as new owner by {request.user}.",
             title=f"Markets: Owner added: {owner}",

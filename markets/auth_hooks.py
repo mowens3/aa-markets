@@ -19,7 +19,7 @@ class MarketsMenuItem(MenuItemHook):
 
     def render(self, request):
         if request.user.has_perm("markets.view_moons") or request.user.has_perm(
-            "markets.view_metenoxes"
+            "markets.view_markets"
         ):
             return MenuItemHook.render(self, request)
         return ""

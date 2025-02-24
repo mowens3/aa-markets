@@ -25,7 +25,7 @@ DEBUG = False
 
 # Add any additional apps to this list.
 INSTALLED_APPS += [
-    "metenox",
+    "markets",
     "eveuniverse",
     "moonmining",
 ]
@@ -46,7 +46,7 @@ DATABASES['default'] = {
 
 # Register an application at https://developers.eveonline.com for Authentication
 # & API Access and fill out these settings. Be sure to set the callback URL
-# to https://example.com/sso/callback substituting your domain for metenox.com
+# to https://example.com/sso/callback substituting your domain for markets.com
 # Logging in to auth requires the publicData scope (can be overridden through the
 # LOGIN_TOKEN_SCOPES setting). Other apps may require more (see their docs).
 ESI_SSO_CLIENT_ID = "dummy"
@@ -57,7 +57,7 @@ ESI_SSO_CALLBACK_URL = "http://localhost:8000"
 # It's recommended to use a free service like SparkPost or Elastic Email to send email.
 # https://www.sparkpost.com/docs/integrations/django/
 # https://elasticemail.com/resources/settings/smtp-api/
-# Set the default from email to something like 'noreply@metenox.com'
+# Set the default from email to something like 'noreply@markets.com'
 # Email validation can be turned off by uncommenting the line below. This
 # can break some services.
 REGISTRATION_VERIFY_EMAIL = False

@@ -327,7 +327,7 @@ class Moon(models.Model):
     @property
     def cycles_before_full(self) -> int:
         """Number of harvest cycles before the moon material bay is at full capacity"""
-        bay_capacity = METENOX_MOON_MATERIAL_BAY_CAPACITY
+        bay_capacity = MARKETS_MOON_MATERIAL_BAY_CAPACITY
         harvest_volume = sum(
             goo_type.volume * amount for goo_type, amount in self.hourly_pull.items()
         )
@@ -337,8 +337,8 @@ class Moon(models.Model):
     def fuel_price(cls) -> float:
         """Returns the monthly price of running a markets"""
         hourly_price = (
-            METENOX_MAGMATIC_GASES_PER_HOUR * EveTypePrice.get_magmatic_gases_price()
-            + METENOX_FUEL_BLOCKS_PER_HOUR * EveTypePrice.get_fuel_block_price()
+            MARKETS_MAGMATIC_GASES_PER_HOUR * EveTypePrice.get_magmatic_gases_price()
+            + MARKETS_FUEL_BLOCKS_PER_HOUR * EveTypePrice.get_fuel_block_price()
         )
         return hourly_price * 24 * 30
 
@@ -430,7 +430,7 @@ class Markets(models.Model):
         self.fuel_blocks_count = new_amount
 
         remaining_fuel_days = floor(
-            self.fuel_blocks_count / (METENOX_FUEL_BLOCKS_PER_HOUR * 24)
+            self.fuel_blocks_count / (MARKETS_FUEL_BLOCKS_PER_HOUR * 24)
         )
 
         ping_on_remaining_fuel_days = self.corporation.ping_on_remaining_fuel_days
@@ -466,7 +466,7 @@ class Markets(models.Model):
         self.magmatic_gas_count = new_amount
 
         remaining_gas_days = floor(
-            self.magmatic_gas_count / (METENOX_MAGMATIC_GASES_PER_HOUR * 24)
+            self.magmatic_gas_count / (MARKETS_MAGMATIC_GASES_PER_HOUR * 24)
         )
 
         ping_on_remaining_magmatic_days = (

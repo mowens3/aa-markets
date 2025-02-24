@@ -13,7 +13,7 @@ from esi.models import Token
 from allianceauth.services.hooks import get_extension_logger
 from app_utils.esi import fetch_esi_status
 
-from metenox.models import HoldingCorporation
+from markets.models import HoldingCorporation
 
 from . import __version__
 

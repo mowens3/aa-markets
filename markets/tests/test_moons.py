@@ -148,7 +148,7 @@ class TestMoons(TestCase):
         ]
 
         moonmining_moon.update_products(moon_products)
-        markets_moon = MetenoxMoon.objects.create(
+        markets_moon = MarketsMoon.objects.create(
             eve_moon_id=MOON_ID,
             moonmining_moon=moonmining_moon,
         )
@@ -172,7 +172,7 @@ class TestMoons(TestCase):
 
         moonmining_moon, _ = Moon.objects.get_or_create(eve_moon_id=MOON_ID)
 
-        markets_moon = MetenoxMoon.objects.create(
+        markets_moon = MarketsMoon.objects.create(
             eve_moon_id=MOON_ID,
             moonmining_moon=moonmining_moon,
         )
@@ -185,7 +185,7 @@ class TestMoons(TestCase):
         ]
         moonmining_moon.update_products(moon_products)
 
-        moon_to_update = MetenoxMoon.moons_in_need_of_update()
+        moon_to_update = MarketsMoon.moons_in_need_of_update()
 
         self.assertEqual(list(moon_to_update), [markets_moon])
 
@@ -196,7 +196,7 @@ class TestMoons(TestCase):
 
         moonmining_moon, _ = Moon.objects.get_or_create(eve_moon_id=MOON_ID)
 
-        markets_moon = MetenoxMoon.objects.create(
+        markets_moon = MarketsMoon.objects.create(
             eve_moon_id=MOON_ID,
             moonmining_moon=moonmining_moon,
         )

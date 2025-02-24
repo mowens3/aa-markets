@@ -116,7 +116,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="owners",
-                        to="metenox.holdingcorporation",
+                        to="markets.holdingcorporation",
                     ),
                 ),
             ],
@@ -166,11 +166,11 @@ class Migration(migrations.Migration):
                 ),
                 ("amount", models.IntegerField(default=0)),
                 (
-                    "metenox",
+                    "markets",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="stored_moon_materials",
-                        to="metenox.metenox",
+                        to="markets.markets",
                     ),
                 ),
                 (
@@ -201,7 +201,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="hourly_products",
-                        to="metenox.moon",
+                        to="markets.moon",
                     ),
                 ),
                 (
@@ -215,12 +215,12 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.AddField(
-            model_name="metenox",
+            model_name="markets",
             name="moon",
             field=models.OneToOneField(
                 on_delete=django.db.models.deletion.CASCADE,
-                related_name="metenox",
-                to="metenox.moon",
+                related_name="markets",
+                to="markets.moon",
             ),
         ),
         migrations.CreateModel(
@@ -248,15 +248,15 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.AddConstraint(
-            model_name="metenoxstoredmoonmaterials",
+            model_name="marketsstoredmoonmaterials",
             constraint=models.UniqueConstraint(
-                fields=("metenox", "product"), name="functional_pk_metenoxstoredproduct"
+                fields=("markets", "product"), name="functional_pk_marketsstoredproduct"
             ),
         ),
         migrations.AddConstraint(
-            model_name="metenoxhourlyproducts",
+            model_name="marketshourlyproducts",
             constraint=models.UniqueConstraint(
-                fields=("moon", "product"), name="functional_pk_metenoxhourlyproduct"
+                fields=("moon", "product"), name="functional_pk_marketshourlyproduct"
             ),
         ),
     ]

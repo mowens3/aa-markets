@@ -14,7 +14,7 @@ from allianceauth.eveonline.models import EveCharacter, EveCorporationInfo
 from app_utils.allianceauth import notify_admins, users_with_permission
 
 from markets import tasks
-from markets.app_settings import METENOX_ADMIN_NOTIFICATIONS_ENABLED
+from markets.app_settings import MARKETS_ADMIN_NOTIFICATIONS_ENABLED
 from markets.models import ESI_SCOPES, HoldingCorporation, Owner, Webhook
 
 
@@ -49,7 +49,7 @@ def _add_character(request, token):
     # TODO figure out why I need to type all this to get the right corp id
     tasks.update_holding.delay(owner.corporation.corporation.corporation_id)
     messages.success(request, f"Update of refineries started for {owner}.")
-    if METENOX_ADMIN_NOTIFICATIONS_ENABLED:
+    if MARKETS_ADMIN_NOTIFICATIONS_ENABLED:
         notify_admins(
             message=f"{owner} was added as new owner by {request.user}.",
             title=f"Markets: Owner added: {owner}",

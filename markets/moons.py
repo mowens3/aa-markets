@@ -33,7 +33,7 @@ def get_markets_hourly_harvest(moon_id: int) -> Dict[EveType, int]:
         return {}
 
     hourly_ore_amounts = {
-        moon_product.ore_type: moon_product.amount * METENOX_HOURLY_HARVEST_VOLUME
+        moon_product.ore_type: moon_product.amount * MARKETS_HOURLY_HARVEST_VOLUME
         for moon_product in moon.products_sorted()
     }
 
@@ -58,7 +58,7 @@ def get_markets_hourly_harvest(moon_id: int) -> Dict[EveType, int]:
             ):
                 amount_material = int(
                     number_reprocess
-                    * METENOX_HARVEST_REPROCESS_YIELD
+                    * MARKETS_HARVEST_REPROCESS_YIELD
                     * type_material.quantity
                 )
                 outputs[type_material.material_eve_type] += amount_material
