@@ -776,7 +776,7 @@ class Webhook(models.Model):
             fields=formatted_fields,
             timestamp=datetime.datetime.now(datetime.timezone.utc),
             footer=dhooks_lite.Footer(
-                "aa-metenox",
+                "aa-markets",
             ),
         )
 

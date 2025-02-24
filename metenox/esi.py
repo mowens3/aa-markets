@@ -21,7 +21,7 @@ METENOX_TYPE_ID = 81826
 
 logger = get_extension_logger(__name__)
 
-esi = EsiClientProvider(app_info_text=f"aa-metenox v{__version__}")
+esi = EsiClientProvider(app_info_text=f"aa-markets v{__version__}")
 
 
 class ESIError(Exception):
