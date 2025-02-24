@@ -9,9 +9,9 @@ from allianceauth.eveonline.models import EveCorporationInfo
 from markets.models import (
     EveTypePrice,
     HoldingCorporation,
-    Metenox,
-    MetenoxStoredMoonMaterials,
-    MetenoxTag,
+    Markets,
+    MarketsStoredMoonMaterials,
+    MarketsTag,
 )
 from markets.tasks import create_markets, update_moons_from_moonmining
 from markets.tests.testdata.load_eveuniverse import load_eveuniverse
@@ -19,7 +19,7 @@ from markets.tests.testdata.load_eveuniverse import load_eveuniverse
 MOON_ID = 40178441
 
 
-def create_test_markets() -> Metenox:
+def create_test_markets() -> Markets:
     """
     Creates a basic markets for testing purpose
     """
@@ -35,7 +35,7 @@ def create_test_markets() -> Metenox:
     eve_moon = EveMoon.objects.get(id=MOON_ID)
 
     structure_info = {
-        "name": "Metenox1",
+        "name": "Markets1",
         "structure_id": 1,
     }
 
@@ -50,12 +50,12 @@ def create_test_markets() -> Metenox:
 
     create_markets(holding.corporation.corporation_id, structure_info, location_info)
 
-    markets = Metenox.objects.get(structure_id=1)
+    markets = Markets.objects.get(structure_id=1)
 
     return markets
 
 
-class TestMetenoxes(TestCase):
+class TestMarketses(TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -105,11 +105,11 @@ class TestMetenoxes(TestCase):
         atmospheric_gases = EveType.objects.get(id=16634)
         hydrocarbons = EveType.objects.get(id=16633)
 
-        stored_atmospheric_gases = MetenoxStoredMoonMaterials(
+        stored_atmospheric_gases = MarketsStoredMoonMaterials(
             markets=markets, product=atmospheric_gases, amount=50
         )
         stored_atmospheric_gases.save()
-        stored_hydrocarbons = MetenoxStoredMoonMaterials(
+        stored_hydrocarbons = MarketsStoredMoonMaterials(
             markets=markets, product=hydrocarbons, amount=200
         )
         stored_hydrocarbons.save()
@@ -127,10 +127,10 @@ class TestMetenoxes(TestCase):
         EveTypePrice.objects.create(eve_type=hydrocarbon, price=2000)
         EveTypePrice.objects.create(eve_type=atmospheric_gases, price=1000)
 
-        MetenoxStoredMoonMaterials.objects.create(
+        MarketsStoredMoonMaterials.objects.create(
             markets=markets, product=atmospheric_gases, amount=50
         )
-        MetenoxStoredMoonMaterials.objects.create(
+        MarketsStoredMoonMaterials.objects.create(
             markets=markets, product=hydrocarbon, amount=200
         )
 
@@ -197,9 +197,9 @@ class TestMetenoxes(TestCase):
         Checks that on markets creation the default tags are correctly added
         """
 
-        tag1 = MetenoxTag.objects.create(name="tag1", default=True)
-        tag2 = MetenoxTag.objects.create(name="tag2", default=True)
-        tag3 = MetenoxTag.objects.create(name="tag3")
+        tag1 = MarketsTag.objects.create(name="tag1", default=True)
+        tag2 = MarketsTag.objects.create(name="tag2", default=True)
+        tag3 = MarketsTag.objects.create(name="tag3")
 
         markets = create_test_markets()
 

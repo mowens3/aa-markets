@@ -12,19 +12,19 @@ from markets.app_settings import (
     METENOX_HARVEST_REPROCESS_YIELD,
     METENOX_HOURLY_HARVEST_VOLUME,
 )
-from markets.models import Moon as MetenoxMoon
+from markets.models import Moon as MarketsMoon
 
 EVE_MOON_MATERIALS_GROUP_ID = 427  # group id of all moon goo
 
 
-def list_all_moons() -> List[MetenoxMoon]:
+def list_all_moons() -> List[MarketsMoon]:
     """Returns all known moons"""
-    return MetenoxMoon.objects.all()
+    return MarketsMoon.objects.all()
 
 
 def get_markets_hourly_harvest(moon_id: int) -> Dict[EveType, int]:
     """
-    Will return how much moon materials a Metenox anchored on the given moon will harvest from the moon ID
+    Will return how much moon materials a Markets anchored on the given moon will harvest from the moon ID
     The output dict is {moon_goo_type: moon_goo_amount_per_hour}
     """
     try:

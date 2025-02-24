@@ -48,9 +48,9 @@ def add_common_context(context: dict = None) -> dict:
         context = {}
 
     if basic_title := context.get("page_title"):
-        context["page_title"] = f"{basic_title} - Metenox"
+        context["page_title"] = f"{basic_title} - Markets"
     else:
-        context["page_title"] = "Metenox"
+        context["page_title"] = "Markets"
 
     context["monthly_fuel_price"] = Moon.fuel_price()
     context["markets_fuel_blocks_per_hour"] = METENOX_FUEL_BLOCKS_PER_HOUR
@@ -102,6 +102,6 @@ def add_owner(request, token):
     if METENOX_ADMIN_NOTIFICATIONS_ENABLED:
         notify_admins(
             message=f"{owner} was added as new owner by {request.user}.",
-            title=f"Metenox: Owner added: {owner}",
+            title=f"Markets: Owner added: {owner}",
         )
     return redirect("markets:corporations")

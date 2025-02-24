@@ -16,7 +16,7 @@ urlpatterns = [
     path("add_owner", views.add_owner, name="add_owner"),
     path("markets", views.markets, name="markets"),
     path("markets/<int:markets_pk>", views.markets_details, name="markets_details"),
-    path("markets_data", views.MetenoxListJson.as_view(), name="markets_data"),
+    path("markets_data", views.MarketsListJson.as_view(), name="markets_data"),
     path("markets_fdd_data", views.markets_fdd_data, name="markets_fdd_data"),
     path("corporations", views.list_corporations, name="corporations"),
     path(

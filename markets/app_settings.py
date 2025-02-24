@@ -13,7 +13,7 @@ MARKETS_MOON_MATERIAL_BAY_CAPACITY = clean_setting(
     "MARKETS_MOON_MATERIAL_BAY_CAPACITY", 500_000
 )
 """
-Volume of the Metenox's Moon material Output Bay
+Volume of the Markets Moon material Output Bay
 Used to calculate how long a metenox takes before being full
 """
 
@@ -36,12 +36,12 @@ This value shouldn't be edited
 
 MARKETS_FUEL_BLOCKS_PER_HOUR = clean_setting("MARKETS_FUEL_BLOCKS_PER_HOUR", 5)
 """
-How many fuel blocks a running Metenox consumes every hours.
+How many fuel blocks a running Markets consumes every hours.
 This value shouldn't be edited
 """
 
 MARKETS_MAGMATIC_GASES_PER_HOUR = clean_setting("MARKETS_MAGMATIC_GASES_PER_HOUR", 110)
 """
-How many magmatic gases a running Metenox consumes every hours.
+How many magmatic gases a running Markets consumes every hours.
 This value shouldn't be edited
 """

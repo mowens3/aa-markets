@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             model_name="markets",
             name="tags",
             field=models.ManyToManyField(
-                help_text="Tags assigned to a Metenox", to="markets.marketstag"
+                help_text="Tags assigned to a Markets", to="markets.marketstag"
             ),
         ),
         migrations.AddField(

@@ -17,7 +17,7 @@ from allianceauth.eveonline.evelinks import dotlan
 from allianceauth.services.hooks import get_extension_logger
 from app_utils.views import link_html
 
-from markets.models import HoldingCorporation, Metenox, Moon, Owner
+from markets.models import HoldingCorporation, Markets, Moon, Owner
 from markets.views._helpers import markets_details_button_html
 from markets.views.general import add_common_context
 
@@ -37,10 +37,10 @@ def markets(request):
 
 
 # pylint: disable = too-many-ancestors, duplicate-code
-class MetenoxListJson(PermissionRequiredMixin, LoginRequiredMixin, BaseDatatableView):
+class MarketsListJson(PermissionRequiredMixin, LoginRequiredMixin, BaseDatatableView):
     """Datatable view rendering markets"""
 
-    model = Metenox
+    model = Markets
     permission_required = "markets.view_markets"
     columns = [
         "id",
@@ -112,7 +112,7 @@ class MetenoxListJson(PermissionRequiredMixin, LoginRequiredMixin, BaseDatatable
     @classmethod
     def initial_queryset(cls, request):
         """Initial query"""
-        markets_query = Metenox.objects.select_related(
+        markets_query = Markets.objects.select_related(
             "moon",
             "corporation",
             "moon__moonmining_moon",
@@ -231,7 +231,7 @@ class MetenoxListJson(PermissionRequiredMixin, LoginRequiredMixin, BaseDatatable
 @permission_required("markets.view_markets")
 def markets_fdd_data(request) -> JsonResponse:
     """Provide lists for drop down fields"""
-    qs = MetenoxListJson.initial_queryset(request)
+    qs = MarketsListJson.initial_queryset(request)
     columns = request.GET.get("columns")
     result = {}
     if columns:
@@ -280,7 +280,7 @@ def _calc_options(request, qs, column):
 @permission_required("markets.view_markets")
 def markets_details(request, markets_pk: int):
     """Renders markets details"""
-    markets = get_object_or_404(Metenox, pk=markets_pk)
+    markets = get_object_or_404(Markets, pk=markets_pk)
     if not user_has_owner_in_corp(request.user, markets.corporation):
         logger.warning(
             "User %s tried to access markets id %s without authorization",
@@ -296,7 +296,7 @@ def markets_details(request, markets_pk: int):
     }
 
     if request.GET.get("new_page"):
-        context["title"] = "Metenox details"
+        context["title"] = "Markets details"
         context["content_file"] = "markets/partials/markets_details.html"
         return render(
             request,

@@ -58,7 +58,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name="Metenox",
+            name="Markets",
             fields=[
                 (
                     "structure_id",
@@ -77,7 +77,7 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name_plural": "Metenoxes",
+                "verbose_name_plural": "Markets",
             },
         ),
         migrations.CreateModel(
@@ -153,7 +153,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name="MetenoxStoredMoonMaterials",
+            name="MarketsStoredMoonMaterials",
             fields=[
                 (
                     "id",
@@ -184,7 +184,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name="MetenoxHourlyProducts",
+            name="MarketsHourlyProducts",
             fields=[
                 (
                     "id",

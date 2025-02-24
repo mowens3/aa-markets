@@ -149,7 +149,7 @@ def get_corporation_markets_assets(
     holding_corporation: HoldingCorporation, markets_set_ids: Set[int]
 ) -> Dict[int, List[Dict]]:
     """
-    Return the assets in the corporation's Metenoxes' MoonMaterialBay and FuelBay.
+    Return the assets in the corporation's Markets MoonMaterialBay and FuelBay.
     Need to receive the set of the corporation's markets ids.
     The data is formatted as a dict with the key being the markets structure id and a list with the info
     """

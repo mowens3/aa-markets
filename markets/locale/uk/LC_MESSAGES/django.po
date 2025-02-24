@@ -69,7 +69,7 @@ msgid "Webhook's id:"
 msgstr "Ідентифікатор вебхука:"
 
 #: markets/templates/markets/base.html:6
-msgid "Metenox"
+msgid "Markets"
 msgstr "Метенокс"
 
 #: markets/templates/markets/base.html:17
@@ -97,7 +97,7 @@ msgid "Profit"
 msgstr "Прибуток"
 
 #: markets/templates/markets/markets.html:14
-msgid "Metenox name"
+msgid "Markets name"
 msgstr "Назва метеноксу"
 
 #: markets/templates/markets/markets.html:15
@@ -220,7 +220,7 @@ msgid "Moons"
 msgstr "Місяці"
 
 #: markets/templates/markets/partials/menu.html:9
-msgid "Metenoxes"
+msgid "Markets"
 msgstr "Метенокси"
 
 #: markets/templates/markets/partials/menu.html:12
@@ -250,13 +250,13 @@ msgid "Magmatic gas remaining"
 msgstr "Залишилось магматичного газу"
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:6
-msgid "Moon products stored in the Metenox"
+msgid "Moon products stored in the Markets"
 msgstr "Продукти, що зберігаються в Метеноксі"
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:11
-msgid "No Moon Materials stored in this Metenox detected."
+msgid "No Moon Materials stored in this Markets detected."
 msgstr ""
-"Жодних місячних матеріалів, що зберігаються у цьому Metenox, не виявлено."
+"Жодних місячних матеріалів, що зберігаються у цьому Markets, не виявлено."
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:19
 msgid "Total stored value"

@@ -5,10 +5,10 @@ from django.contrib import admin
 from markets.models import (
     EveTypePrice,
     HoldingCorporation,
-    Metenox,
-    MetenoxHourlyProducts,
-    MetenoxStoredMoonMaterials,
-    MetenoxTag,
+    Markets,
+    MarketsHourlyProducts,
+    MarketsStoredMoonMaterials,
+    MarketsTag,
     Moon,
     Owner,
     Webhook,
@@ -16,8 +16,8 @@ from markets.models import (
 from markets.templatetags.markets import formatisk
 
 
-class MetenoxHourlyHarvestInline(admin.TabularInline):
-    model = MetenoxHourlyProducts
+class MarketsHourlyHarvestInline(admin.TabularInline):
+    model = MarketsHourlyProducts
 
     def has_add_permission(self, request, obj):
         return False

@@ -10,7 +10,7 @@ from allianceauth.authentication.admin import User
 from allianceauth.services.hooks import get_extension_logger
 from app_utils.views import BootstrapStyle
 
-from markets.models import HoldingCorporation, Metenox
+from markets.models import HoldingCorporation, Markets
 
 logger = get_extension_logger(__name__)
 
@@ -59,7 +59,7 @@ def moon_details_button_html(moon: Moon) -> str:
     )
 
 
-def markets_details_button_html(markets: Metenox) -> str:
+def markets_details_button_html(markets: Markets) -> str:
     """
     Return an HTML button to display the modal with markets details
     """
@@ -67,8 +67,8 @@ def markets_details_button_html(markets: Metenox) -> str:
     return generic_details_button_html(
         markets,
         "markets:markets_details",
-        "Metenox details",
-        "modalMetenoxDetails",
+        "Markets details",
+        "modalMarketsDetails",
         "fas fa-moon",
     )
 

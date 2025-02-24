@@ -4,7 +4,7 @@ from allianceauth.services.hooks import MenuItemHook, UrlHook
 from . import urls
 
 
-class MetenoxMenuItem(MenuItemHook):
+class MarketsMenuItem(MenuItemHook):
     """This class ensures only authorized users will see the menu entry"""
 
     def __init__(self):
@@ -27,7 +27,7 @@ class MetenoxMenuItem(MenuItemHook):
 
 @hooks.register("menu_item_hook")
 def register_menu():
-    return MetenoxMenuItem()
+    return MarketsMenuItem()
 
 
 @hooks.register("url_hook")

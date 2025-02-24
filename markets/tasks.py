@@ -22,10 +22,10 @@ from markets.esi import (
 from markets.models import (
     EveTypePrice,
     HoldingCorporation,
-    Metenox,
-    MetenoxHourlyProducts,
-    MetenoxStoredMoonMaterials,
-    MetenoxTag,
+    Markets,
+    MarketsHourlyProducts,
+    MarketsStoredMoonMaterials,
+    MarketsTag,
     Moon,
 )
 from markets.moons import get_markets_hourly_harvest
@@ -87,13 +87,13 @@ def update_holding(holding_corp_id: int):
 
     current_markets_ids = set(
         markets.structure_id
-        for markets in Metenox.objects.filter(corporation=holding_corp)
+        for markets in Markets.objects.filter(corporation=holding_corp)
     )
 
     disappeared_markets_ids = (
         current_markets_ids - markets_ids
     )  # markets that have been unanchored/destroyed/transferred
-    Metenox.objects.filter(structure_id__in=disappeared_markets_ids).delete()
+    Markets.objects.filter(structure_id__in=disappeared_markets_ids).delete()
 
     missing_markets_ids = markets_ids - current_markets_ids
     for markets_id in missing_markets_ids:
@@ -120,7 +120,7 @@ def create_markets(
     holding_corporation_id: int, structure_info: dict, location_info: dict
 ):
     """
-    Creates and adds the Metenox in the database
+    Creates and adds the Markets in the database
     """
     holding_corporation = HoldingCorporation.objects.get(
         corporation__corporation_id=holding_corporation_id
@@ -149,14 +149,14 @@ def create_markets(
             "Couldn't find the moon corresponding to markets %s", structure_info
         )
         raise TaskError(
-            f"Couldn't fetch the markets moon. Metenox id {structure_info['structure_id']}."
+            f"Couldn't fetch the markets moon. Markets id {structure_info['structure_id']}."
             f"Structure position {location_info['position']}"
         )
 
     eve_moon = nearest_celestial.eve_object
     moon, _ = Moon.objects.get_or_create(eve_moon=eve_moon)
 
-    markets = Metenox(
+    markets = Markets(
         moon=moon,
         structure_name=structure_info["name"],
         structure_id=structure_info["structure_id"],
@@ -164,7 +164,7 @@ def create_markets(
     )
     markets.save()
 
-    default_tags = MetenoxTag.objects.filter(default=True)
+    default_tags = MarketsTag.objects.filter(default=True)
 
     markets.tags.add(*default_tags)
 
@@ -181,7 +181,7 @@ def update_markets(
 
     logger.info("Updating markets id %s", markets_structure_id)
 
-    markets = Metenox.objects.get(structure_id=markets_structure_id)
+    markets = Markets.objects.get(structure_id=markets_structure_id)
 
     if markets.structure_name != structure_info["name"]:
         logger.info("Updating markets id %s name", markets_structure_id)
@@ -197,7 +197,7 @@ def update_markets(
             elif asset["type_id"] in EveTypePrice.get_fuels_type_ids():
                 fuel_blocks += asset["quantity"]
         if asset["location_flag"] == "MoonMaterialBay":
-            stored_moon_material, _ = MetenoxStoredMoonMaterials.objects.get_or_create(
+            stored_moon_material, _ = MarketsStoredMoonMaterials.objects.get_or_create(
                 markets=markets, product_id=asset["type_id"]
             )
             stored_moon_material.amount = asset["quantity"]
@@ -205,7 +205,7 @@ def update_markets(
 
     markets.set_fuel_blocs(fuel_blocks)
 
-    MetenoxStoredMoonMaterials.objects.bulk_update(
+    MarketsStoredMoonMaterials.objects.bulk_update(
         stored_products_to_update, fields=["amount"]
     )
 
@@ -242,10 +242,10 @@ def create_moon_materials(moon_id: int):
 
     # Delete all before as I have issues when using update_conflicts.
     # Backend doesn't seem compatible
-    MetenoxHourlyProducts.objects.filter(moon=moon).delete()
-    MetenoxHourlyProducts.objects.bulk_create(
+    MarketsHourlyProducts.objects.filter(moon=moon).delete()
+    MarketsHourlyProducts.objects.bulk_create(
         [
-            MetenoxHourlyProducts(moon=moon, product=goo_type, amount=amount)
+            MarketsHourlyProducts(moon=moon, product=goo_type, amount=amount)
             for goo_type, amount in harvest.items()
         ]
     )
@@ -357,7 +357,7 @@ def send_daily_analytics():
 
     count_moons = Moon.objects.count()
     count_holdings = HoldingCorporation.objects.count()
-    count_markets = Metenox.objects.count()
+    count_markets = Markets.objects.count()
 
     send_analytics("moons", count_moons)
     send_analytics("holdings", count_holdings)

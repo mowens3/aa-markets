@@ -52,12 +52,12 @@ def _add_character(request, token):
     if METENOX_ADMIN_NOTIFICATIONS_ENABLED:
         notify_admins(
             message=f"{owner} was added as new owner by {request.user}.",
-            title=f"Metenox: Owner added: {owner}",
+            title=f"Markets: Owner added: {owner}",
         )
 
 
 def _check_permissions(user: User) -> bool:
-    """Checks if the user can use the Metenox application"""
+    """Checks if the user can use the Markets application"""
 
     return user.has_perm("markets.view_moons") or user.has_perm(
         "markets.view_markets"
@@ -65,7 +65,7 @@ def _check_permissions(user: User) -> bool:
 
 
 def _is_character_added(character: EveCharacter) -> bool:
-    """Checks if the character is already added in the Metenox application"""
+    """Checks if the character is already added in the Markets application"""
 
     return Owner.objects.filter(character_ownership__character=character).exists()
 
@@ -86,7 +86,7 @@ app_import = AppImport(
         LoginImport(
             app_label="markets",
             unique_id="default",
-            field_label="Metenox",
+            field_label="Markets",
             add_character=_add_character,
             scopes=ESI_SCOPES,
             check_permissions=_check_permissions,

@@ -63,7 +63,7 @@ msgid "Webhook's id:"
 msgstr ""
 
 #: markets/templates/markets/base.html:6
-msgid "Metenox"
+msgid "Markets"
 msgstr ""
 
 #: markets/templates/markets/base.html:17
@@ -91,7 +91,7 @@ msgid "Profit"
 msgstr ""
 
 #: markets/templates/markets/markets.html:14
-msgid "Metenox name"
+msgid "Markets name"
 msgstr ""
 
 #: markets/templates/markets/markets.html:15
@@ -206,7 +206,7 @@ msgid "Moons"
 msgstr ""
 
 #: markets/templates/markets/partials/menu.html:9
-msgid "Metenoxes"
+msgid "Markets"
 msgstr ""
 
 #: markets/templates/markets/partials/menu.html:12
@@ -236,11 +236,11 @@ msgid "Magmatic gas remaining"
 msgstr ""
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:6
-msgid "Moon products stored in the Metenox"
+msgid "Moon products stored in the Markets"
 msgstr ""
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:11
-msgid "No Moon Materials stored in this Metenox detected."
+msgid "No Moon Materials stored in this Markets detected."
 msgstr ""
 
 #: markets/templates/markets/partials/markets_details_stored_products.html:19

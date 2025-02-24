@@ -117,7 +117,7 @@
                 }
             };
 
-            /* Metenox table */
+            /* Markets table */
             let def_all = jQuery.extend(true, {}, def)
             def_all.ajax.url = '{% url "markets:markets_data" %}'
             def_all.filterDropDown.ajax = '{% url "markets:markets_fdd_data" %}'
@@ -128,7 +128,7 @@
                 $("#wrapper_all").show();
             });
 
-            handle_modal_events("modalMetenoxDetails", "modalMetenoxDetailsContent");
+            handle_modal_events("modalMarketsDetails", "modalMarketsDetailsContent");
         })
     </script>
 

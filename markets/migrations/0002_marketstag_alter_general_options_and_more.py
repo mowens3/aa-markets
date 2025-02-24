@@ -50,7 +50,7 @@ class Migration(migrations.Migration):
             name="ping_on_remaining_fuel_days",
             field=models.IntegerField(
                 default=0,
-                help_text="Ping should be sent when the fuel blocks stored in a Metenox allow less than this value",
+                help_text="Ping should be sent when the fuel blocks stored in a Markets allow less than this value",
             ),
         ),
         migrations.AddField(
@@ -58,7 +58,7 @@ class Migration(migrations.Migration):
             name="ping_on_remaining_magmatic_days",
             field=models.IntegerField(
                 default=0,
-                help_text="Ping should be sent when the magmatic gases stored in a Metenox allow less than this value",
+                help_text="Ping should be sent when the magmatic gases stored in a Markets allow less than this value",
             ),
         ),
         migrations.AddField(
@@ -115,7 +115,7 @@ class Migration(migrations.Migration):
             name="tag",
             field=models.ForeignKey(
                 default=None,
-                help_text="Tag assigned to a Metenox",
+                help_text="Tag assigned to a Markets",
                 null=True,
                 on_delete=django.db.models.deletion.SET_NULL,
                 to="markets.marketstag",

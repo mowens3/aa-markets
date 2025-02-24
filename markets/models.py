@@ -68,11 +68,11 @@ class HoldingCorporation(models.Model):
 
     ping_on_remaining_magmatic_days = models.IntegerField(
         default=0,
-        help_text="Ping should be sent when the magmatic gases stored in a Metenox allow less than this value",
+        help_text="Ping should be sent when the magmatic gases stored in a Markets allow less than this value",
     )
     ping_on_remaining_fuel_days = models.IntegerField(
         default=0,
-        help_text="Ping should be sent when the fuel blocks stored in a Metenox allow less than this value",
+        help_text="Ping should be sent when the fuel blocks stored in a Markets allow less than this value",
     )
 
     @property
@@ -111,8 +111,8 @@ class HoldingCorporation(models.Model):
         self.last_updated = timezone.now()
         self.save()
 
-    def ping_markets_fuel(self, markets: "Metenox", new_fuel_blocks_amount: int):
-        """Sends out to all webhooks a notification about the Metenox low fuel blocks level"""
+    def ping_markets_fuel(self, markets: "Markets", new_fuel_blocks_amount: int):
+        """Sends out to all webhooks a notification about the Markets low fuel blocks level"""
         self.alert_webhooks(
             "Low fuel blocks level",
             f"Your markets {markets.structure_name} in "
@@ -121,8 +121,8 @@ class HoldingCorporation(models.Model):
             [("Remaining Fuel Blocks", new_fuel_blocks_amount)],
         )
 
-    def ping_markets_magma(self, markets: "Metenox", new_magmatic_gases_amount: int):
-        """Sends out to all webhooks a notification about the Metenox low magmatic level"""
+    def ping_markets_magma(self, markets: "Markets", new_magmatic_gases_amount: int):
+        """Sends out to all webhooks a notification about the Markets low magmatic level"""
         self.alert_webhooks(
             "Low reagent level",
             f"Your markets {markets.structure_name} in "
@@ -251,7 +251,7 @@ class Owner(models.Model):
         """Disables the owner after an ESI error"""
         if notify:
             level = Notification.Level.WARNING
-            title = "Metenox owner disabled"
+            title = "Markets owner disabled"
             message = f"The owner {self} has been disabled because of {cause}"
             Notification.objects.notify_user(
                 self.user,
@@ -301,7 +301,7 @@ class Moon(models.Model):
     @property
     def hourly_pull(self) -> Dict[EveType, int]:
         """Returns how much goo is harvested in an hour by a markets"""
-        hourly_products = MetenoxHourlyProducts.objects.filter(moon=self)
+        hourly_products = MarketsHourlyProducts.objects.filter(moon=self)
         return {product.product: product.amount for product in hourly_products}
 
     @property
@@ -315,7 +315,7 @@ class Moon(models.Model):
         return self.moonmining_moon.rarity_class
 
     def update_price(self):
-        """Updates the Metenox price attribute to display"""
+        """Updates the Markets price attribute to display"""
         hourly_harvest_value = sum(
             EveTypePrice.get_eve_type_price(moon_goo) * moon_goo_amount
             for moon_goo, moon_goo_amount in self.hourly_pull.items()
