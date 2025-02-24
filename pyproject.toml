@@ -3,13 +3,13 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "aa-metenox"
+name = "aa-markets"
 dynamic = ["version", "description"]
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
 authors = [
-    { name = "T'rahk Rokym", email = "trahk.rokym@gmail.com" },
+    { name = "Matt Owens", email = "mowens3@gmail.com" },
 ]
 classifiers = [
     "Environment :: Web Environment",
@@ -38,10 +38,10 @@ dependencies = [
 
 
 [project.urls]
-Homepage = "https://gitlab.com/r0kym/aa-metenox"
-Source = "https://gitlab.com/r0kym/aa-metenox"
-Changelog = "https://gitlab.com/r0kym/aa-metenox/-/blob/main/CHANGELOG.md"
-Tracker = "https://gitlab.com/r0kym/aa-metenox/-/issues"
+Homepage = "https://github.com/mowens3/aa-markets"
+Source = "https://github.com/mowens3/aa-markets"
+Changelog = "https://github.com/mowens3/aa-markets/-/blob/main/CHANGELOG.md"
+Tracker = "https://github.com/mowens3/aa-markets/-/issues"
 
 [tool.flit.module]
 name = "metenox"
