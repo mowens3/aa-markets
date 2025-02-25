@@ -9,8 +9,8 @@ from moonmining.models.moons import Moon as MoonMiningMoon
 from eveuniverse.models import EveType
 
 from markets.app_settings import (
-    METENOX_HARVEST_REPROCESS_YIELD,
-    METENOX_HOURLY_HARVEST_VOLUME,
+    MARKETS_HARVEST_REPROCESS_YIELD,
+    MARKETS_HOURLY_HARVEST_VOLUME,
 )
 from markets.models import Moon as MarketsMoon
 
