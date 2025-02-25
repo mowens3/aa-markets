@@ -49,5 +49,5 @@ urlpatterns = [
     #      views.remove_corporation_webhook,
     #      name="remove_corporation_webhook",
     #  ),
-    path("prices", views.prices, name="prices"),
+    # path("prices", views.prices, name="prices"),
 ]
