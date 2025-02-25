@@ -17,7 +17,7 @@ from markets.models import HoldingCorporation
 
 from . import __version__
 
-METENOX_TYPE_ID = 81826
+MARKETS_TYPE_ID = 81826
 
 logger = get_extension_logger(__name__)
 
@@ -40,7 +40,7 @@ def get_markets_from_esi(
     structures = get_structures_from_esi(holding_corporation)
 
     return [
-        structure for structure in structures if structure["type_id"] == METENOX_TYPE_ID
+        structure for structure in structures if structure["type_id"] == MARKETS_TYPE_ID
     ]
 
 

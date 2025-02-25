@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                     ("basic_access", "Can access this app"),
                     (
                         "auditor",
-                        "Can access metenox information about all corporations",
+                        "Can access markets information about all corporations",
                     ),
                 ),
                 "managed": False,
@@ -71,8 +71,8 @@ class Migration(migrations.Migration):
                     "corporation",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        related_name="metenoxes",
-                        to="metenox.holdingcorporation",
+                        related_name="markets",
+                        to="markets.holdingcorporation",
                     ),
                 ),
             ],
