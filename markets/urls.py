@@ -7,7 +7,7 @@ from . import views
 app_name = "markets"
 
 urlpatterns = [
-     path("", views.index, name="index"),
+    # path("", views.index, name="index"),
     # path("modal_loader_body", views.modal_loader_body, name="modal_loader_body"),
     # path("moons", views.list_moons, name="moons"),
     # path("moon/<int:moon_pk>", views.moon_details, name="moon_details"),
