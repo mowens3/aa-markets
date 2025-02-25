@@ -24,10 +24,10 @@ from allianceauth.services.hooks import get_extension_logger
 from app_utils.allianceauth import notify_admins
 
 from markets.app_settings import (
-    METENOX_ADMIN_NOTIFICATIONS_ENABLED,
-    METENOX_FUEL_BLOCKS_PER_HOUR,
-    METENOX_MAGMATIC_GASES_PER_HOUR,
-    METENOX_MOON_MATERIAL_BAY_CAPACITY,
+    MARKETS_ADMIN_NOTIFICATIONS_ENABLED,
+    MARKETS_FUEL_BLOCKS_PER_HOUR,
+    MARKETS_MAGMATIC_GASES_PER_HOUR,
+    MARKETS_MOON_MATERIAL_BAY_CAPACITY,
 )
 
 ESI_SCOPES = [
@@ -259,7 +259,7 @@ class Owner(models.Model):
                 message,
                 level,
             )
-            if METENOX_ADMIN_NOTIFICATIONS_ENABLED:
+            if MARKETS_ADMIN_NOTIFICATIONS_ENABLED:
                 notify_admins(message, title, level)
         self.is_enabled = False
         self.save()
